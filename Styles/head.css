@@ -1,0 +1,19 @@
+.left-icon{
+     font-size: 250%;
+     font-weight: bolder;
+     cursor: pointer;
+
+     position: absolute;
+     top: 25px;
+     left: 50px;
+
+}
+
+.right-icon{
+     font-size: 250%;
+     cursor: pointer;
+     
+     position: absolute;
+     top: 25px;
+     right: 50px;
+}

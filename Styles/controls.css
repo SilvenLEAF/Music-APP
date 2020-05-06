@@ -9,7 +9,9 @@
      position: absolute;
      bottom: 0vh;
 }
-
+#controls > div{
+     cursor: pointer;
+}
 #play, #prev, #next{
      border-radius: 50%;
      background: white;
