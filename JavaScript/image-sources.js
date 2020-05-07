@@ -8,8 +8,15 @@
 // document.querySelector('.eight').src = 'images/Glory-Villain.jpg';
 // document.querySelector('.nine').src = 'images/Glory-Mage-Apprentice.jpg';
 
-let arr= document.querySelectorAll('img');
+let cardArr= document.querySelectorAll('.card-img');
 
-for (let i=0; i<arr.length; i++){
-     arr[i].src = 'images/Glory-Heroine-Friend.jpg';
+for (let i=0; i<cardArr.length; i++){
+     cardArr[i].src = 'images/Glory-Heroine-Friend.jpg';
+}
+
+
+let iconArr= document.querySelectorAll('.song-icon');
+
+for (let i=0; i<iconArr.length; i++){
+     iconArr[i].src = 'images/Glory-Heroine-Friend.jpg';
 }

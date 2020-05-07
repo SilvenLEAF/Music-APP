@@ -12,8 +12,13 @@
 .right-icon{
      font-size: 250%;
      cursor: pointer;
-     
+
      position: absolute;
      top: 25px;
      right: 50px;
+}
+
+.fa-close{
+     top: 15px;
+     right: 20px;
 }
