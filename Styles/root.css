@@ -22,3 +22,40 @@ body{
      font-family: "Dosis", "Open Sans", tahoma, sans-serif;
      background: var(--bodyBG);
 }
+/* ---------------------------------------
+.                CONTAINER
+---------------------------------------- */
+.container{
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     overflow: hidden;
+}
+/* ---------------------------------------
+.                SETTINGS
+---------------------------------------- */
+.settings{
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     overflow: hidden;
+
+     display: none;
+}
+/* ---------------------------------------
+.                SONGS
+---------------------------------------- */
+.songs{
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     overflow: hidden;
+
+     display: none;
+}
