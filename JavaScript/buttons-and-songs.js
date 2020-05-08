@@ -150,6 +150,26 @@ for(let i=0; i<elArr.length; i++){
 }
 //--------------------------------------------------------------
 
+//play
+let play= document.querySelector('#play');
+let playing =true;
+
+play.addEventListener('click', ()=>{
+     if(playing){
+          play.classList.add('fa-play')
+          play.classList.remove('fa-pause')
+
+          uta.pause();
+          playing = false;
+     }else{
+          play.classList.remove('fa-play')
+          play.classList.add('fa-pause')
+
+          uta.play();
+          playing = true;
+     }
+});
+//--------------------------------------------------------------
 //next
 let next= document.querySelector('#next');
 
@@ -160,6 +180,11 @@ next.addEventListener('click', ()=>{
           playingSongNum =0;
      }
      songChange();
+
+     playing=true;
+     
+     play.classList.remove('fa-play')
+     play.classList.add('fa-pause')
 });
 //--------------------------------------------------------------
 
@@ -173,25 +198,11 @@ prev.addEventListener('click', ()=>{
           playingSongNum =songList.length -1;
      }
      songChange();
-});
-//--------------------------------------------------------------
 
-//play
-let play= document.querySelector('#play');
-let playing =true;
+     playing=true;
 
-play.addEventListener('click', ()=>{
-
-     play.classList.toggle('fa-play')
-     play.classList.toggle('fa-pause')
-
-     if(playing){
-          uta.pause();
-          playing = false;
-     }else{
-          uta.play();
-          playing = true;
-     }
+     play.classList.remove('fa-play')
+     play.classList.add('fa-pause')
 });
 //--------------------------------------------------------------
 
