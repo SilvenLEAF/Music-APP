@@ -16,9 +16,12 @@
      position: absolute;
      top: 25px;
      right: 50px;
+     z-index: 100;
 }
 
 .fa-close{
+     position: fixed;
      top: 15px;
      right: 20px;
+     z-index: 100;
 }
