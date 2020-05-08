@@ -55,3 +55,14 @@ h2{
      position: relative;
      top: -20px;
 }
+@media screen and (max-width: 400px) {
+     .songs p{
+          margin-left: 20px;
+          font-size: 120%;
+          font-weight: bolder;
+
+          color: var(--song-name);
+
+     }
+
+}
