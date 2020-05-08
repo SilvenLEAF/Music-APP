@@ -1,0 +1,8 @@
+.songs{
+     clip-path: circle(0% at 0% 0%);
+     transition: 0.9s ease;
+}
+
+.songs.active{
+     clip-path: circle(150% at 0% 0%);
+}

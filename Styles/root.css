@@ -25,7 +25,9 @@ body{
      right: 0;
      overflow: hidden;
 
-     display: none;
+     background: var(--bodyBG);
+
+     /* display: none; */
 
 }
 /* ---------------------------------------
@@ -38,6 +40,9 @@ body{
      bottom: 0;
      right: 0;
      overflow: hidden;
+
+     background: var(--bodyBG);
+
 }
 
 /* ---------------------------------------
@@ -50,6 +55,8 @@ body{
      bottom: 0;
      right: 0;
      overflow: hidden;
+
+     background: var(--bodyBG);
 
      display: none;
 }

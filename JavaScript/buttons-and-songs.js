@@ -98,16 +98,21 @@ let containerSection= document.querySelector('.container');
 let angleDown= document.querySelector('.fa-angle-down');
 
 angleDown.addEventListener('click', ()=>{
-     songSection.style.display = 'block';
-     containerSection.style.display = 'none';
+
+     songSection.classList.add('active');
+
 });
 
 //close
 let close= document.querySelector('.fa-close');
 
 close.addEventListener('click', ()=>{
-     songSection.style.display = 'none';
-     containerSection.style.display = 'block';
+
+     songSection.classList.remove('active');
+
+
+     // songSection.style.display = 'none';
+     // containerSection.style.display = 'block';
 });
 //***************************************
 
@@ -142,10 +147,11 @@ for(let i=0; i<elArr.length; i++){
      elArr[i].addEventListener('click', ()=>{
           playingSongNum = i;
 
-          songSection.style.display = 'none';
-          containerSection.style.display = 'block';
+          songSection.classList.remove('active');
+
 
           songChange();
+
      });
 }
 //--------------------------------------------------------------
@@ -182,7 +188,7 @@ next.addEventListener('click', ()=>{
      songChange();
 
      playing=true;
-     
+
      play.classList.remove('fa-play')
      play.classList.add('fa-pause')
 });
