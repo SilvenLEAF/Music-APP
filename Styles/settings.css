@@ -15,7 +15,6 @@
 }
 .settings-option{
      width: 80vw;
-     height: 70px;
      margin: 25px auto;
 
      border-radius: 20px;
@@ -30,7 +29,11 @@
 
      cursor: pointer;
 }
+.settings-option-name{
+     margin: 20px;
+}
 .settings-input{
+     width: 200px;
      outline: none;
      background: none;
      border: 1px solid #300;
@@ -45,6 +48,8 @@
      font-weight: bolder;
 }
 .settings-button{
+     margin: 20px;
+
      width: 50px;
      height: 50px;
      border-radius: 50%;
@@ -56,4 +61,9 @@
      color: #700;
      font-weight: bold;
      font-family: tahoma;
+}
+@media screen and (max-width: 400px) {
+     .settings-option{
+          flex-flow: column;
+     }
 }
