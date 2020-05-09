@@ -24,10 +24,10 @@ let songList = [
           song: 'songs/tg.mp3'
      },
      {
-          name: 'ドクターストーン',
-          image: 'anime/ds.jpg',
-          time: '4:08',
-          song: 'songs/s3.mp3'
+          name: 'シンカのクロス',
+          image: 'anime/xwars.jpg',
+          time: '4:36',
+          song: 'songs/digiX.mp3'
      },
      {
           name: '若鶏烏',
@@ -58,6 +58,36 @@ let songList = [
           image: 'anime/gto.png',
           time: '3:47',
           song: 'songs/gto.mp3'
+     },
+     {
+          name: 'ステンダプ',
+          image: 'anime/dg2.jpg',
+          time: '4:28',
+          song: 'songs/dgstup.mp3'
+     },
+     {
+          name: '舞湯者',
+          image: 'anime/tg.jpg',
+          time: '4:49',
+          song: 'songs/x5.mp3'
+     },
+     {
+          name: 'ステンダプ',
+          image: 'anime/bha.jpg',
+          time: '4:18',
+          song: 'songs/xhearts.mp3'
+     },
+     {
+          name: '保護者',
+          image: 'anime/dg2.jpg',
+          time: '4:25',
+          song: 'songs/x4b.mp3'
+     },
+     {
+          name: 'ドクターストーン',
+          image: 'anime/ds.jpg',
+          time: '4:08',
+          song: 'songs/s3.mp3'
      }
 
 ]
@@ -344,3 +374,19 @@ buttonBGbutton.addEventListener('click', ()=>{
 
 
 });
+
+
+
+/* ******************************************
+.                                  KANJI
+******************************************* */
+let kanji = document.querySelector('.kanji');
+let wrapper = document.querySelector('.wrapper');
+let bgi = 'url("Styles/images-in-styles/bg.png") center/cover';
+kanji.addEventListener('click', ()=>{
+          if(wrapper.style.background == 'none'){
+               wrapper.style.background = bgi;
+          }else{
+               wrapper.style.background = 'none';
+          }
+})

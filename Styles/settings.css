@@ -62,12 +62,14 @@
 
      border: none;
      outline: none;
+     user-select: none;
+     cursor: pointer;
      background: darkcyan;     /*-webkit-radial-gradient(center, circle, hsl(160, 100%, 50%), hsl(240, 100%, 60%));*/
 
      color: #fff;
      font-family: tahoma;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
      .settings-option{
           flex-flow: column;
      }

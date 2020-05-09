@@ -8,9 +8,14 @@
      display: flex;
      justify-content: center;
      align-items: center;
+
+
 }
 h1{
      writing-mode: vertical-rl;
      color: #fff;
      text-shadow: 1px 1px 1px #000;
+
+     cursor: pointer;
+     user-select: none;
 }
