@@ -49,7 +49,7 @@ body{
      right: 0;
      overflow: hidden;
 
-     background: var(--songsBG);
+     background: var(--song-list-sectionBG); 
 
 }
 

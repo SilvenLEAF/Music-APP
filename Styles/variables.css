@@ -2,7 +2,7 @@
 
 :root{
      --containerBG: aqua;
-     --songsBG: -webkit-linear-gradient(left, #f00699 50%, #fff 50%);
+     --song-list-sectionBG: -webkit-linear-gradient(left, #f00699 50%, #fff 50%);
      --wrapperBG:  url('images-in-styles/bg.png') center/cover;
      --mainBG: darkgreen;
 
