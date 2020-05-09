@@ -1,9 +1,9 @@
 /* ------------------------------------------------------------------- */
 
 :root{
-     --bodyBG: aqua;
+     --containerBG: aqua;
      --songsBG: -webkit-linear-gradient(left, #f00699 50%, #fff 50%);
-     --containerBG:  url('images-in-styles/bg.png') center/cover;
+     --wrapperBG:  url('images-in-styles/bg.png') center/cover;
      --mainBG: darkgreen;
 
      /* ----------------------------
