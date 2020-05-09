@@ -391,7 +391,7 @@ buttonBGbutton.addEventListener('click', ()=>{
 /* ******************************************
 .                                  KANJI
 ******************************************* */
-let kanji = document.querySelector('.kanji');
+let kanji = document.querySelector('h1');
 let wrapper = document.querySelector('.wrapper');
 let bgi = 'url("Styles/images-in-styles/bg.png") center/cover';
 kanji.addEventListener('click', ()=>{

@@ -1,11 +1,10 @@
 /* ------------------------------------------------------------------- */
 
 :root{
-     --containerBG: purple;
+     --containerBG: -webkit-linear-gradient(right, #f00699 50%, #fff 50%);;
      --song-list-sectionBG: -webkit-linear-gradient(left, #f00699 50%, #fff 50%);
      --wrapperBG:  url('images-in-styles/bg.png') center/cover;
-     --mainBG: darkgreen;
-     --settingsBG: -webkit-linear-gradient(left, darkcyan 50%, #fff 50%);
+     --settingsBG: -webkit-linear-gradient(left, #f00699 50%, #fff 50%);-webkit-linear-gradient(left, darkcyan 50%, #fff 50%);
 
      /* ----------------------------
      .          SONGS LIST
