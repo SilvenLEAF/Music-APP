@@ -333,6 +333,17 @@ containerBGbutton.addEventListener('click', ()=>{
           containerBG.style.background = userContainerBG;
 
 })
+//---------------SongListBG
+let songListBG= document.querySelector('.song-list-section');
+let songListBGbutton = document.querySelector('.songListBG-button');
+
+songListBGbutton.addEventListener('click', ()=>{
+     let userSongListBG= document.querySelector('.songListBG-input').value;
+          settingSectionClose();
+
+          songListBG.style.background = userSongListBG;
+
+})
 
 //---------------SettingsBG
 let settingsBG= document.querySelector('.settings');
