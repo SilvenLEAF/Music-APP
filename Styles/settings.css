@@ -6,12 +6,12 @@
      bottom: 0;
 
      overflow: auto;
-
+}
+.settings-options-holder{
      display: flex;
      flex-flow: column;
      align-items: center;
      justify-content: center;
-
 }
 .settings-option{
      width: 80vw;
