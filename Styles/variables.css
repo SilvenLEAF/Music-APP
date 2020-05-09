@@ -1,7 +1,8 @@
 /* ------------------------------------------------------------------- */
 
 :root{
-     --bodyBG: -webkit-linear-gradient(left, #f00699 50%, #fff 50%);
+     --songsBG: -webkit-linear-gradient(left, #f00699 50%, #fff 50%);
+     --containerBG: #f00699; 
      --mainBG: darkgreen;
 
      /* ----------------------------
