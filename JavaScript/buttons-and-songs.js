@@ -72,7 +72,7 @@ let songList = [
           song: 'songs/x5.mp3'
      },
      {
-          name: 'ステンダプ',
+          name: 'クロスハ-ト-',
           image: 'anime/bha.jpg',
           time: '4:18',
           song: 'songs/xhearts.mp3'
