@@ -9,7 +9,6 @@
 
      <link rel="stylesheet" href="Styles/variables.css">
      <link rel="stylesheet" href="Styles/root.css">
-     <link rel="stylesheet" href="Styles/main.css">
      <link rel="stylesheet" href="Styles/song-list-section.css">
      <link rel="stylesheet" href="Styles/settings.css">
 
@@ -80,13 +79,32 @@
      <!-- ****************************
      .                     SETTINGS
      ****************************** -->
-     <div class="settings"></div>
+     <div class="settings">
+          <div class="right-icon fa fa-close settings-close"></div>
+
+          <div class="settings-holder">
+
+               <div class="settings-option">
+                    <div class="settings-option-name">BodyBG</div>
+                    <input type="text" class="settings-input containerBG-input">
+                    <button class="settings-button containerBG-button">Save</button>
+               </div>
+
+               <div class="settings-option">
+                    <div class="settings-option-name">SettingsBG</div>
+                    <input type="text" class="settings-input settingsBG-input">
+                    <button class="settings-button settingsBG-button">Save</button>
+               </div>
+
+          </div>
+
+     </div>
 
      <!-- ****************************
      .                     SONGS
      ****************************** -->
      <div class="song-list-section active">
-          <div class="right-icon fa fa-close"></div>
+          <div class="right-icon fa fa-close song-list-close"></div>
 
           <h2 class="song-list-h">SONGS of <span class="fa fa-heart"></span></h2>
           <div class="list-holder">

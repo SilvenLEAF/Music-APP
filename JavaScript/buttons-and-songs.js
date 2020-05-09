@@ -88,12 +88,15 @@ let uta = new Audio();
 let elArr= document.querySelectorAll('.song-el');
 let songSection= document.querySelector('.song-list-section');
 let containerSection= document.querySelector('.container');
+let settingSection = document.querySelector('.settings');
 
 
 /* *******************************************************
 ************************ONCLICKS*********************** */
 
-// ----------------------------OPEN CLOSE
+
+
+// ----------------------------OPEN CLOSE (SONG LIST)
 //angle
 let angleDown= document.querySelector('.fa-angle-down');
 
@@ -110,14 +113,42 @@ angleDown.addEventListener('click', ()=>{
           }, 1000)
 });
 
-//close
-let close= document.querySelector('.fa-close');
-close.addEventListener('click', ()=>{
+//song list close
+let songListClose= document.querySelector('.song-list-close');
+songListClose.addEventListener('click', ()=>{
      songSectionClose();
 
 });
-     // songSection.style.display = 'none';
-     // containerSection.style.display = 'block';
+
+
+
+
+
+// ----------------------------OPEN CLOSE (SETTINGS)
+//cogs
+let cogs= document.querySelector('.fa-cogs');
+
+cogs.addEventListener('click', ()=>{
+
+     settingSection.classList.add('Sactive');
+
+          setTimeout(()=>{
+               containerSection.classList.remove('Cactive');
+          }, 100)
+          setTimeout(()=>{
+               containerSection.style.zIndex = '100';
+               settingSection.style.zIndex = '10';
+          }, 1000)
+});
+
+
+
+//settings close
+let settingsClose= document.querySelector('.settings-close');
+settingsClose.addEventListener('click', ()=>{
+     settingSectionClose();
+
+});
 
 //***************************************
 /* ------------------------------------------
@@ -133,6 +164,22 @@ function songSectionClose(){
 
           setTimeout(()=>{
                songSection.style.zIndex = '100';
+               containerSection.style.zIndex = '10';
+          }, 1000)
+}
+/* ------------------------------------------
+SONG SECTION CLOSE (to be used)
+------------------------------------------ */
+function settingSectionClose(){
+
+          containerSection.classList.add('Cactive');
+
+          setTimeout(()=>{
+               settingSection.classList.remove('Sactive');
+          }, 100);
+
+          setTimeout(()=>{
+               settingSection.style.zIndex = '100';
                containerSection.style.zIndex = '10';
           }, 1000)
 }
@@ -241,3 +288,29 @@ like.addEventListener('click', ()=>{
      }
 
 });
+
+/* -----------------------------------------------------------------------
+.                                  SETTINGS
+------------------------------------------------------------------------ */
+//---------------ContainerBG
+let containerBG= document.querySelector('.container');
+let containerBGbutton = document.querySelector('.containerBG-button');
+
+containerBGbutton.addEventListener('click', ()=>{
+     let userContainerBG= document.querySelector('.containerBG-input').value;
+          settingSectionClose();
+
+          containerBG.style.background = userContainerBG;
+
+})
+
+//---------------SettingsBG
+let settingsBG= document.querySelector('.settings');
+let settingsBGbutton = document.querySelector('.settingsBG-button');
+
+settingsBGbutton.addEventListener('click', ()=>{
+     let userSettingsBG= document.querySelector('.settingsBG-input').value;
+
+          settingsBG.style.background = userSettingsBG;
+
+})

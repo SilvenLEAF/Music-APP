@@ -27,7 +27,7 @@ body{
 
      background: var(--containerBG);
 
-     /* display: none; */
+
 
 }
 .wrapper{
@@ -49,7 +49,7 @@ body{
      right: 0;
      overflow: hidden;
 
-     background: var(--song-list-sectionBG); 
+     background: var(--song-list-sectionBG);
 
 }
 
@@ -66,5 +66,4 @@ body{
 
      background: var(--settingsBG);
 
-     display: none;
 }
