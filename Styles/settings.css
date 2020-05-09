@@ -56,10 +56,9 @@
 
      border: none;
      outline: none;
-     background: -webkit-radial-gradient(center, circle, hsl(160, 100%, 50%), hsl(240, 100%, 60%));
+     background: darkcyan;     /*-webkit-radial-gradient(center, circle, hsl(160, 100%, 50%), hsl(240, 100%, 60%));*/
 
-     color: #700;
-     font-weight: bold;
+     color: #fff;
      font-family: tahoma;
 }
 @media screen and (max-width: 400px) {

@@ -329,3 +329,18 @@ songElementBGbutton.addEventListener('click', ()=>{
           settingSectionClose();
 
 });
+
+//---------------ButtonBG
+let buttonBG= document.querySelectorAll('.btn');
+let buttonBGbutton = document.querySelector('.buttonBG-button');
+
+buttonBGbutton.addEventListener('click', ()=>{
+     let userButtonBG= document.querySelector('.buttonBG-input').value;
+          settingSectionClose();
+
+          for(let i=0; i<songElementBG.length; i++){
+               buttonBG[i].style.background = userButtonBG;
+          };
+
+
+});
