@@ -13,4 +13,9 @@
      --song-el: #aaa;
      --song-name: #500;
      --song-el-shadow: rgba(0, 0, 0, 0.4);
+
+     /* ----------------------------
+     .          SETTINGS
+     ----------------------------- */
+     --settings-el: purple;
 }

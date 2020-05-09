@@ -19,7 +19,13 @@
 
      border-radius: 20px;
 
-     background: var(--song-el);
+     color: #fff;
+     font-size: 130%;
+     font-weight: bold;
+     text-shadow: 3px 3px 3px #000;
+     letter-spacing: 1px;
+
+     background: var(--settings-el);
      box-shadow: -6px 6px 6px var(--song-el-shadow);
 
      display: flex;
@@ -61,7 +67,7 @@
      color: #fff;
      font-family: tahoma;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
      .settings-option{
           flex-flow: column;
      }
