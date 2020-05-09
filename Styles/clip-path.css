@@ -1,8 +1,19 @@
 .songs{
      clip-path: circle(0% at 0% 0%);
-     transition: 0.9s ease;
+     z-index: 10;
+     transition: all 0.9s ease;
 }
 
 .songs.active{
      clip-path: circle(150% at 0% 0%);
+}
+
+.container{
+     clip-path: circle(0% at 50% 100%);
+     z-index: 100;
+     transition: all 0.9s ease;
+}
+
+.container.Cactive{
+     clip-path: circle(150% at 50% 100%);
 }

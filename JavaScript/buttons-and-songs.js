@@ -101,22 +101,41 @@ angleDown.addEventListener('click', ()=>{
 
      songSection.classList.add('active');
 
+          setTimeout(()=>{
+               containerSection.classList.remove('Cactive');
+          }, 100)
+          setTimeout(()=>{
+               containerSection.style.zIndex = '100';
+               songSection.style.zIndex = '10';
+          }, 1000)
 });
 
 //close
 let close= document.querySelector('.fa-close');
-
 close.addEventListener('click', ()=>{
+     songSectionClose();
 
-     songSection.classList.remove('active');
-
-
+});
      // songSection.style.display = 'none';
      // containerSection.style.display = 'block';
-});
+
 //***************************************
+/* ------------------------------------------
+SONG SECTION CLOSE (to be used)
+------------------------------------------ */
+function songSectionClose(){
 
+          containerSection.classList.add('Cactive');
 
+          setTimeout(()=>{
+               songSection.classList.remove('active');
+          }, 100)
+
+          setTimeout(()=>{
+               songSection.style.zIndex = '100';
+               containerSection.style.zIndex = '10';
+          }, 1000)
+}
 /* ------------------------------------------
 .         SONG CHANGE (to be used)
 ------------------------------------------ */
@@ -147,8 +166,7 @@ for(let i=0; i<elArr.length; i++){
      elArr[i].addEventListener('click', ()=>{
           playingSongNum = i;
 
-          songSection.classList.remove('active');
-
+          songSectionClose();
 
           songChange();
 
