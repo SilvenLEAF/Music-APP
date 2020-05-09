@@ -8,6 +8,8 @@
 
      position: absolute;
      bottom: 0vh;
+
+     margin-bottom: 20px;
 }
 #controls > div{
      cursor: pointer;
