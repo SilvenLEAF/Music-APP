@@ -86,7 +86,7 @@ for(let i=0; i<songList.length; i++){
 let uta = new Audio();
 
 let elArr= document.querySelectorAll('.song-el');
-let songSection= document.querySelector('.songs');
+let songSection= document.querySelector('.song-list-section');
 let containerSection= document.querySelector('.container');
 
 
