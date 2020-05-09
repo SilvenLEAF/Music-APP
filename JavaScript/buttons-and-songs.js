@@ -24,10 +24,10 @@ let songList = [
           song: 'songs/tg.mp3'
      },
      {
-          name: 'シンカのクロス',
-          image: 'anime/xwars.jpg',
-          time: '4:36',
-          song: 'songs/digiX.mp3'
+          name: 'ステンダプ',
+          image: 'anime/dg2.jpg',
+          time: '4:28',
+          song: 'songs/dgstup.mp3'
      },
      {
           name: '若鶏烏',
@@ -60,10 +60,10 @@ let songList = [
           song: 'songs/gto.mp3'
      },
      {
-          name: 'ステンダプ',
+          name: 'シンカのクロス',
           image: 'anime/dg2.jpg',
-          time: '4:28',
-          song: 'songs/dgstup.mp3'
+          time: '4:36',
+          song: 'songs/digiX.mp3'
      },
      {
           name: '舞湯者',
@@ -322,6 +322,14 @@ like.addEventListener('click', ()=>{
 /* -----------------------------------------------------------------------
 .                                  SETTINGS
 ------------------------------------------------------------------------ */
+
+//**************SETTINGS INPUT PLACEHOLDERS
+let settingsInput = document.querySelectorAll('.settings-input');
+
+for(let i=0; i<settingsInput.length; i++){
+     settingsInput[i].placeholder = 'Type a Color';
+}
+
 //---------------ContainerBG
 let containerBG= document.querySelector('.container');
 let containerBGbutton = document.querySelector('.containerBG-button');
