@@ -314,3 +314,18 @@ settingsBGbutton.addEventListener('click', ()=>{
           settingsBG.style.background = userSettingsBG;
 
 })
+
+//---------------SongElementBG
+let songElementBG= document.querySelectorAll('.song-el');
+let songElementBGbutton = document.querySelector('.songElementBG-button');
+
+songElementBGbutton.addEventListener('click', ()=>{
+     let userSongElementBG= document.querySelector('.songElementBG-input').value;
+
+          for(let i=0; i<songElementBG.length; i++){
+               songElementBG[i].style.background = userSongElementBG;
+          }
+
+          settingSectionClose();
+
+});
