@@ -67,3 +67,25 @@ body{
      background: var(--settingsBG);
 
 }
+/* ---------------------------------------
+.                SETTINGS
+---------------------------------------- */
+.copyRight{
+     font-size: 90%;
+     color: #fff;
+
+     width: 50%;
+     text-align: center;
+}
+.song-list-section .copyRight, .settings .copyRight{
+     position: fixed;
+     top: 40px;
+     font-weight: bold;
+
+}
+.container .wrapper .copyRight{
+     position: fixed;
+     bottom: 15px;
+     width: 100vw;
+     color: #300;
+}
