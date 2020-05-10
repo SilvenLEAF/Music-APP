@@ -42,22 +42,10 @@ let songList = [
           song: 'songs/bbg.mp3'
      },
      {
-          name: '世界最強',
-          image: 'anime/opm.jpg',
-          time: '3:47',
-          song: 'songs/hero.mp3'
-     },
-     {
-          name: 'ポケットモンスター',
-          image: 'anime/pk.jpg',
-          time: '4:17',
-          song: 'songs/pk.mp3'
-     },
-     {
-          name: '僕等二人',
-          image: 'anime/gto.png',
-          time: '3:47',
-          song: 'songs/gto.mp3'
+          name: '彗星女',
+          image: 'anime/inzem.jpg',
+          time: '4:27',
+          song: 'songs/inzsg.mp3'
      },
      {
           name: 'シンカのクロス',
@@ -66,16 +54,64 @@ let songList = [
           song: 'songs/digiX.mp3'
      },
      {
-          name: '舞湯者',
-          image: 'anime/tg.jpg',
+          name: '僕等二人',
+          image: 'anime/gto.png',
+          time: '3:47',
+          song: 'songs/gto.mp3'
+     },
+     {
+          name: 'ポケットモンスター',
+          image: 'anime/pk.jpg',
+          time: '4:17',
+          song: 'songs/pk.mp3'
+     },
+     {
+          name: '雪女王',
+          image: 'anime/fz.jpg',
+          time: '3:45',
+          song: 'songs/fz.mp3'
+     },
+     {
+          name: 'クロスハートー',
+          image: 'anime/dg2.jpg',
+          time: '4:18',
+          song: 'songs/xhearts.mp3'
+     },
+     {
+          name: '世界最強',
+          image: 'anime/opm.jpg',
+          time: '3:47',
+          song: 'songs/hero.mp3'
+     },
+     {
+          name: 'サーマーゾムビ',
+          image: 'anime/inzemart.jpg',
+          time: '3:52',
+          song: 'songs/inzsz.mp3'
+     },
+     {
+          name: '稲妻十一',
+          image: 'anime/inz.png',
+          time: '4:18',
+          song: 'songs/inzop.mp3'
+     },
+     {
+          name: 'ビマイライート',
+          image: 'anime/bml.jpg',
+          time: '3:14',
+          song: 'songs/bml.mp3'
+     },
+     {
+          name: '舞勇者',
+          image: 'anime/dg2.jpg',
           time: '4:49',
           song: 'songs/x5.mp3'
      },
      {
-          name: 'クロスハ-ト-',
-          image: 'anime/bha.jpg',
-          time: '4:18',
-          song: 'songs/xhearts.mp3'
+          name: 'バタフライ',
+          image: 'anime/btfly.jpg',
+          time: '4:17',
+          song: 'songs/btfly.mp3'
      },
      {
           name: '保護者',
