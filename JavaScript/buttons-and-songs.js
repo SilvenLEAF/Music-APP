@@ -60,10 +60,10 @@ let songList = [
           song: 'songs/gto.mp3'
      },
      {
-          name: 'ポケットモンスター',
-          image: 'anime/pk.jpg',
-          time: '4:17',
-          song: 'songs/pk.mp3'
+          name: 'インファルノ',
+          image: 'anime/fire-force.jpg',
+          time: '3:33',
+          song: 'songs/fire-force.mp3'
      },
      {
           name: '雪女王',
@@ -122,14 +122,44 @@ let songList = [
      {
           name: 'ドクターストーン',
           image: 'anime/ds.jpg',
-          time: '4:08',
-          song: 'songs/s3.mp3'
+          time: '3:25',
+          song: 'songs/ds.mp3'
      },
      {
           name: '不易な毎日',
           image: 'anime/tangled.jpg',
           time: '2:23',
           song: 'songs/tangled-when-will-my-life-begin.mp3'
+     },
+     {
+          name: 'ポケットモンスター',
+          image: 'anime/pk.jpg',
+          time: '4:17',
+          song: 'songs/pk.mp3'
+     },
+     {
+          name: 'ヴェイル',
+          image: 'anime/fire-force.jpg',
+          time: '3:43',
+          song: 'songs/fire-force-end.mp3'
+     },
+     {
+          name: '壁',
+          image: 'anime/haikyuuS3.jpg',
+          time: '4:08',
+          song: 'songs/s3.mp3'
+     },
+     {
+          name: 'ロスーロスーロスー',
+          image: 'anime/youjo-senki.jpg',
+          time: '3:39',
+          song: 'songs/los-los-los.mp3'
+     },
+     {
+          name: '死神の世界',
+          image: 'anime/death-note.jpg',
+          time: '3:39',
+          song: 'songs/death-note.mp3'
      }
 
 ]
