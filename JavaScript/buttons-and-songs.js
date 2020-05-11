@@ -351,7 +351,16 @@ prev.addEventListener('click', ()=>{
 
 //like
 let like= document.querySelector('#like')
-like.addEventListener('click', ()=>{
+like.addEventListener('click', toggleLike);
+
+let carouselCard= document.querySelectorAll('.card');
+
+for(let i=0; i<carouselCard.length; i++){
+     carouselCard[i].addEventListener('click', toggleLike);
+}
+
+
+function toggleLike(){
 
      if(like.style.color ==='red'){
           like.style.color ='#fff';
@@ -359,8 +368,7 @@ like.addEventListener('click', ()=>{
           like.style.color ='red';
      }
 
-});
-
+}
 /* -----------------------------------------------------------------------
 .                                  SETTINGS
 ------------------------------------------------------------------------ */
@@ -423,7 +431,6 @@ songElementBGbutton.addEventListener('click', ()=>{
 
 //---------------ButtonBG
 let buttonBG= document.querySelectorAll('.btn');
-let carouselCard= document.querySelectorAll('.card');
 let buttonBGbutton = document.querySelector('.buttonBG-button');
 
 buttonBGbutton.addEventListener('click', ()=>{
