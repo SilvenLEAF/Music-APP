@@ -124,6 +124,12 @@ let songList = [
           image: 'anime/ds.jpg',
           time: '4:08',
           song: 'songs/s3.mp3'
+     },
+     {
+          name: '不易な毎日',
+          image: 'anime/tangled.jpg',
+          time: '2:23',
+          song: 'songs/tangled-when-will-my-life-begin.mp3'
      }
 
 ]
