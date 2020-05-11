@@ -169,7 +169,6 @@ let songList = [
      }
 
 ]
-console.log(songList.length)
 /* *******************************************************
 ******************************************************** */
 
@@ -305,7 +304,7 @@ function songChange(){
 }
 
 //---------------------------------------deefault
-let playingSongNum =0;
+let playingSongNum =11;
 for (let j=0; j<cardArr.length; j++){
      cardArr[j].src = songList[playingSongNum].image;
 }
