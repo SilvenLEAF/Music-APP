@@ -150,7 +150,7 @@ let songList = [
           song: 'songs/s3.mp3'
      },
      {
-          name: 'ロスーロスーロスー',
+          name: 'ロスロスロス',
           image: 'anime/youjo-senki.jpg',
           time: '3:39',
           song: 'songs/los-los-los.mp3'
