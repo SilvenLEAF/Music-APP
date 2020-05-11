@@ -143,7 +143,7 @@ let songList = [
           time: '4:49',
           song: 'songs/x5.mp3',
 
-          searchName: 'Digimon Xwars Digimon Fusion Maiyuusha'
+          searchName: 'Digimon Xwars Digimon Fusion Maiyuusha X5'
      },
      {
           name: 'バタフライ',
@@ -159,7 +159,7 @@ let songList = [
           time: '4:25',
           song: 'songs/x4b.mp3',
 
-          searchName: 'Digimon Xwars Digimon Fusion The Guardian'
+          searchName: 'Digimon Xwars Digimon Fusion The Guardian X4B'
      },
      {
           name: 'ドクターストーン',
