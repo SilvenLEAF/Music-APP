@@ -66,34 +66,4 @@ body{
 
      background: var(--settingsBG);
 
-}
-/* ---------------------------------------
-.                SETTINGS
----------------------------------------- */
-.copyright-holder{
-     width: 70vw;
-     height: 70px;
-
-     display: flex;
-     flex-flow: column;
-     align-content: center;
-     justify-content: center;
-}
-.copyRight{
-     font-size: 90%;
-     color: #fff;
-
-
-     text-align: center;
-     user-select: none;
-}
-.song-list-section .copyRight, .settings .copyRight{
-     font-weight: bold;
-
-}
-.container .wrapper .copyRight{
-     position: fixed;
-     bottom: 15px;
-     width: 100vw;
-     color: #300;
-}
+} 

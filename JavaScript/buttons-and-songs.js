@@ -171,7 +171,19 @@ let songList = [
 ]
 /* *******************************************************
 ******************************************************** */
+//Search Toggle
 
+const searchToggler = document.querySelector('.search-toggler');
+const searchBox = document.querySelector('.song-search-granpa');
+searchToggler.addEventListener('click', ()=>{
+     searchBox.style.display = 'flex';
+     searchToggler.style.display = 'none';
+})
+
+function songSearchHide(){
+     searchBox.style.display = 'none';
+     searchToggler.style.display = 'flex';
+}
 /* *******************************************************
 ******************************************************** */
 
@@ -229,6 +241,10 @@ let songListClose= document.querySelector('.song-list-close');
 songListClose.addEventListener('click', ()=>{
      songSectionClose();
 
+     setTimeout(()=>{
+          songSearchHide();
+     }, 900)
+     
 });
 
 

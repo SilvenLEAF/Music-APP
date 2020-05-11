@@ -1,0 +1,67 @@
+.copyright-holder, .song-search-granpa{
+     width: 80vw;
+     height: 70px;
+
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+     align-items: center;
+}
+
+
+/* ---------------------------------------
+.                SONG SEARCH
+---------------------------------------- */
+
+
+.song-search-granpa{
+     position: fixed;
+     display: none;
+
+}
+.song-search-papa{
+     width: 80%;
+     background: #fff;
+     border-radius: 40px;
+     border: 2px solid green;
+}
+.song-search-input{
+     width: 90%;
+     height: 20px;
+     text-align: center;
+
+     padding: 10px;
+
+     background: none;
+     border: none;
+     outline: none;
+
+     font-size: 150%;
+     font-family: "Dosis";
+     font-weight: bold;
+     letter-spacing: 2px;
+
+}
+
+/* ---------------------------------------
+.                COPYRIGHT
+---------------------------------------- */
+
+.copyRight{
+     font-size: 90%;
+     color: #fff;
+
+
+     text-align: center;
+     user-select: none;
+}
+.song-list-section .copyRight, .settings .copyRight{
+     font-weight: bold;
+
+}
+.container .wrapper .copyRight{
+     position: fixed;
+     bottom: 15px;
+     width: 100vw;
+     color: #300;
+}
