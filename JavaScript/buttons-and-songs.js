@@ -1,178 +1,178 @@
 //Here we have all the Songs
 let songList = [
      {
-          name: 'クロスウォーズ',
-          image: 'anime/xwars.jpg',
+          name: 'ネバギバ',
+          image: 'images/xwars.jpg',
           time: '4:18',
-          song: 'songs/xwars.mp3',
+          song: 'songs/digimon-xwars-nebagiba.mp3',
 
           searchName: 'Digimon Xwars Digimon Fusion Never Give Up Nebagiba'
      },
      {
-          name: '未来の夢',
-          image: 'anime/dm.jpg',
+          name: '夢を叶えて',
+          image: 'images/doraemon-prehistoric.jpg',
           time: '4:04',
-          song: 'songs/dm.mp3',
+          song: 'songs/doraemon-yume-wo-kanaete.mp3',
 
           searchName: 'Doraemon Yume wo Kanaete'
      },
      {
           name: 'ピースサイン',
-          image: 'anime/bha.jpg',
+          image: 'images/bha.jpg',
           time: '4:02',
-          song: 'songs/peace-sign.mp3',
+          song: 'songs/bha-peace-sign.mp3',
 
           searchName: 'Boku no hero academia my hero academia bha mha Peace Sign'
      },
      {
           name: '東京喰種',
-          image: 'anime/tg.jpg',
+          image: 'images/tokyo-ghoul.png',
           time: '3:55',
-          song: 'songs/tg.mp3',
+          song: 'songs/tokyo-ghoul-op.mp3',
 
           searchName: 'Tokyo ghoul Unravel'
      },
      {
           name: 'ステンダプ',
-          image: 'anime/dg2.jpg',
+          image: 'images/xwars-2.jpg',
           time: '4:28',
-          song: 'songs/dgstup.mp3',
+          song: 'songs/digimon-xwars-stand-up.mp3',
 
           searchName: 'Digimon Xwars Digimon Fusion Twill Stand Up'
      },
      {
-          name: '若鶏烏',
-          image: 'anime/hkyu.jpg',
-          time: '4:02',
-          song: 'songs/fly-high.mp3',
+          name: '死神の世界',
+          image: 'images/death-note.jpg',
+          time: '3:39',
+          song: 'songs/death-note-op.mp3',
 
-          searchName: 'Haikyuu Fly High'
+          searchName: 'Death Note OP'
      },
      {
-          name: 'ガチンコ',
-          image: 'anime/bbg.jpg',
+          name: 'ガチンコベイ',
+          image: 'images/beyblade-burst-gt.jpg',
           time: '0:45',
-          song: 'songs/bbg.mp3',
+          song: 'songs/beyblade-burst-gt-op.mp3',
 
           searchName: 'Beyblade Burst GT Gachi'
      },
      {
-          name: '彗星女',
-          image: 'anime/inzem.jpg',
+          name: '彗星の女子',
+          image: 'images/inazuma-emperor.jpg',
           time: '4:27',
-          song: 'songs/inzsg.mp3',
+          song: 'songs/inazuma-orion-suisei-girls.mp3',
 
           searchName: 'Inazuma Eleven Inazuma 11 Suisei Girls'
      },
      {
-          name: 'シンカのクロス',
-          image: 'anime/dg2.jpg',
+          name: 'ヂギクロス',
+          image: 'images/xwars.jpg',
           time: '4:36',
-          song: 'songs/digiX.mp3',
+          song: 'songs/digimon-xwars-evolution-and-digix.mp3',
 
           searchName: 'Digimon Xwars Digimon Fusion Evolution and DigiX'
 
      },
      {
           name: '僕等二人',
-          image: 'anime/gto.png',
+          image: 'images/not-gto-manga.jpg',
           time: '3:47',
-          song: 'songs/gto.mp3',
+          song: 'songs/gto-end.mp3',
 
-          searchName: 'GTO'
+          searchName: 'GTO End'
      },
      {
           name: 'インファルノ',
-          image: 'anime/fire-force.jpg',
+          image: 'images/fire-force.jpg',
           time: '3:33',
-          song: 'songs/fire-force.mp3',
+          song: 'songs/fire-force-op.mp3',
 
           searchName: 'Fire Force OP'
      },
      {
-          name: '雪女王',
-          image: 'anime/fz.jpg',
+          name: '雪の女王',
+          image: 'images/frozen.jpg',
           time: '3:45',
-          song: 'songs/fz.mp3',
+          song: 'songs/frozen-let-it-go.mp3',
 
           searchName: 'Disney Frozen Let it go'
      },
      {
           name: 'クロスハートー',
-          image: 'anime/dg2.jpg',
+          image: 'images/xwars.jpg',
           time: '4:18',
-          song: 'songs/xhearts.mp3',
+          song: 'songs/digimon-xwars-xhearts.mp3',
 
           searchName: 'Digimon Xwars Digimon Fusion Cross Hearts X Hearts'
 
      },
      {
           name: '世界最強',
-          image: 'anime/opm.jpg',
+          image: 'images/one-punch-man.jpg',
           time: '3:47',
-          song: 'songs/hero.mp3',
+          song: 'songs/one-man-punch-hero.mp3',
 
-          searchName: 'One Punch Man The Hero'
+          searchName: 'One Punch Man Openning The Hero'
      },
      {
           name: 'サーマーゾムビ',
-          image: 'anime/inzemart.jpg',
+          image: 'images/inazuma-emperor-art.jpg',
           time: '3:52',
-          song: 'songs/inzsz.mp3',
+          song: 'songs/inazuma-orion-summer-zombie.mp3',
 
           searchName: 'Inazuma Eleven Inazuma 11 Summer Zombie'
      },
      {
           name: '稲妻十一',
-          image: 'anime/inz.png',
+          image: 'images/inazuma-game.jpg',
           time: '4:18',
-          song: 'songs/inzop.mp3',
+          song: 'songs/inazuma-op-sha-la-la.mp3',
 
           searchName: 'Inazuma Eleven Inazuma 11 OP'
      },
      {
           name: 'ビマイライート',
-          image: 'anime/bml.jpg',
+          image: 'images/digimon-appli.jpg',
           time: '3:14',
-          song: 'songs/bml.mp3',
+          song: 'songs/digimon-appli-be-my-light.mp3',
 
           searchName: 'Digimon Appli Monsters Be My Light'
      },
      {
-          name: '舞勇者',
-          image: 'anime/dg2.jpg',
+          name: '空の舞勇者',
+          image: 'images/xwars.jpg',
           time: '4:49',
-          song: 'songs/x5.mp3',
+          song: 'songs/digimon-xwars-x5.mp3',
 
           searchName: 'Digimon Xwars Digimon Fusion Maiyuusha X5'
      },
      {
           name: 'バタフライ',
-          image: 'anime/btfly.jpg',
+          image: 'images/digimon-butterfly.jpg',
           time: '4:17',
-          song: 'songs/btfly.mp3',
+          song: 'songs/digimon-butterfly.mp3',
 
           searchName: 'Digimon Butterfly'
      },
      {
           name: '保護者',
-          image: 'anime/dg2.jpg',
+          image: 'images/xwars-2.jpg',
           time: '4:25',
-          song: 'songs/x4b.mp3',
+          song: 'songs/digimon-xwars-x4b.mp3',
 
           searchName: 'Digimon Xwars Digimon Fusion The Guardian X4B'
      },
      {
           name: 'ドクターストーン',
-          image: 'anime/ds.jpg',
+          image: 'images/doctor-stone.jpg',
           time: '3:25',
-          song: 'songs/ds.mp3',
+          song: 'songs/doctor-stone-op-2.mp3',
 
           searchName: 'Doctor Stone'
      },
      {
           name: '不易な毎日',
-          image: 'anime/tangled.jpg',
+          image: 'images/tangled.jpg',
           time: '2:23',
           song: 'songs/tangled-when-will-my-life-begin.mp3',
 
@@ -180,51 +180,51 @@ let songList = [
      },
      {
           name: 'ポケットモンスター',
-          image: 'anime/pk.jpg',
+          image: 'images/pokemon.jpg',
           time: '4:17',
-          song: 'songs/pk.mp3',
+          song: 'songs/pokemon-getta-ban-ban.mp3',
 
           searchName: 'Pokemon Getta Ban Ban'
      },
      {
-          name: 'オーバーロード',
-          image: 'anime/overlord.jpg',
+          name: '不死者の王',
+          image: 'images/overlord.jpg',
           time: '3:43',
-          song: 'songs/overlord.mp3',
+          song: 'songs/overlord-op-1.mp3',
 
           searchName: 'Overlord'
      },
      {
-          name: '壁',
-          image: 'anime/haikyuuS3.jpg',
+          name: 'ヴェイル',
+          image: 'images/fire-force.jpg',
+          time: '3:43',
+          song: 'songs/fire-force-end.mp3',
+
+          searchName: 'Fire Force End Veil Fire Force Ending '
+     },
+     {
+          name: '増し増し',
+          image: 'images/haikyuu-2.webp',
           time: '4:08',
-          song: 'songs/s3.mp3',
+          song: 'songs/haikyuu-s3-end.mp3',
 
           searchName: 'Haikyuu S3 End Haikyuu Season 3 Ending'
      },
      {
           name: 'ロスロスロス',
-          image: 'anime/youjo-senki.jpg',
+          image: 'images/youjo-senki.jpg',
           time: '3:39',
-          song: 'songs/los-los-los.mp3',
+          song: 'songs/youjo-senki-los-los-los.mp3',
 
           searchName: 'Youjo Senki Los Los Los'
      },
      {
-          name: '死神の世界',
-          image: 'anime/death-note.jpg',
-          time: '3:39',
-          song: 'songs/death-note.mp3',
+          name: '高く飛べ',
+          image: 'images/haikyuu.jpeg',
+          time: '4:02',
+          song: 'songs/haikyuu-fly-high.mp3',
 
-          searchName: 'Death Note OP'
-     },
-     {
-          name: 'ヴェイル',
-          image: 'anime/fire-force.jpg',
-          time: '3:43',
-          song: 'songs/fire-force-end.mp3',
-
-          searchName: 'Fire Force End Veil Fire Force Ending '
+          searchName: 'Haikyuu Fly High'
      }
 
 ]

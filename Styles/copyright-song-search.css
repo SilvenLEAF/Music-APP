@@ -42,7 +42,9 @@
      letter-spacing: 2px;
 
 }
-
+.search-toggler{
+     cursor: pointer;
+}
 /* ---------------------------------------
 .                COPYRIGHT
 ---------------------------------------- */
