@@ -1,3 +1,4 @@
+//Here we have all the Songs
 let songList = [
      {
           name: 'クロスウォーズ',
@@ -227,161 +228,115 @@ let songList = [
      }
 
 ]
-/* *******************************************************
-******************************************************** */
-//Search Toggle
-
-const searchToggler = document.querySelector('.search-toggler');
-const searchBox = document.querySelector('.song-search-granpa');
-searchToggler.addEventListener('click', ()=>{
-     searchBox.style.display = 'flex';
-     searchToggler.style.display = 'none';
-})
-
-function songSearchHide(){
-     searchBox.style.display = 'none';
-     searchToggler.style.display = 'flex';
-}
-/* *******************************************************
-******************************************************** */
-//Search Filter
-
-const songSearchBar = document.querySelector('.song-search-input');
-const songDivs = document.querySelectorAll('.song-el');
-songSearchBar.addEventListener('keyup', (e)=>{
-     const searchTerm = e.target.value.toLowerCase();
-
-     for(let i=0; i<songList.length; i++){
-          const songTitle = songList[i].searchName.toLowerCase();
-
-          if(songTitle.indexOf(searchTerm) != -1){
-               songDivs[i].style.display = 'flex';
-          } else{
-               songDivs[i].style.display = 'none';
-          }
-     }
 
 
 
-})
 
 
-/* *******************************************************
-******************************************************** */
-
-let cardArr= document.querySelectorAll('.card-img');
-let iconArr= document.querySelectorAll('.song-icon');
-let songTimeArr= document.querySelectorAll('.song-time');
-let songNameArr= document.querySelectorAll('.song-name');
-
-/* *******************************************************
-.                                     SONG LIST NAME+TIME
-******************************************************** */
-
-for(let i=0; i<songList.length; i++){
-     songNameArr[i].textContent = songList[i].name;
-     songTimeArr[i].textContent = songList[i].time;
-     iconArr[i].style.backgroundImage = `url(${songList[i].image})`;
-}
-
-/* *******************************************************
-******************************************************** */
-
- //------------------------------------DOM DRAGGER
+/* **************************************************
+.                               ALL GLOBAL VARIABLES
+************************************************** */
+//JavaScript
 let uta = new Audio();
-
-let elArr= document.querySelectorAll('.song-el');
-let songSection= document.querySelector('.song-list-section');
-let containerSection= document.querySelector('.container');
-let settingSection = document.querySelector('.settings');
-
-
-/* *******************************************************
-************************ONCLICKS*********************** */
+let playingSongNum =11;
+let playing =true;
 
 
 
-// ----------------------------OPEN CLOSE (SONG LIST)
-//angle
+//------------------------------Container Page---------------------------------
+//Container and Wrapper
+let containerSectionPage = document.querySelector('.container');
+let wrapper = document.querySelector('.wrapper');
+
+//Sparkling and Kanji
+let bgi = 'url("Styles/images-in-styles/bg.png") center/cover';
+let kanji = document.querySelector('h1');
+
+//carousel
+let carouselCard= document.querySelectorAll('.card');
+let cardArr= document.querySelectorAll('.card-img');
+
+//Page Change Icons
 let angleDown= document.querySelector('.fa-angle-down');
-
-angleDown.addEventListener('click', ()=>{
-
-     songSection.classList.add('active');
-
-          setTimeout(()=>{
-               containerSection.classList.remove('Cactive');
-          }, 100)
-          setTimeout(()=>{
-               containerSection.style.zIndex = '100';
-               songSection.style.zIndex = '10';
-          }, 1000)
-});
-
-//song list close
-let songListClose= document.querySelector('.song-list-close');
-songListClose.addEventListener('click', ()=>{
-     songSectionClose();
-
-     setTimeout(()=>{
-          songSearchHide();
-     }, 900)
-
-});
-
-
-
-
-
-// ----------------------------OPEN CLOSE (SETTINGS)
-//cogs
 let cogs= document.querySelector('.fa-cogs');
 
-cogs.addEventListener('click', ()=>{
-
-     settingSection.classList.add('Sactive');
-
-          setTimeout(()=>{
-               containerSection.classList.remove('Cactive');
-          }, 100)
-          setTimeout(()=>{
-               containerSection.style.zIndex = '100';
-               settingSection.style.zIndex = '10';
-          }, 1000)
-});
+//Controls
+let play= document.querySelector('#play');
+let next= document.querySelector('#next');
+let prev= document.querySelector('#prev');
+let like= document.querySelector('#like')
+//------------------------------------------------------------------------------
 
 
 
-//settings close
+//---------------------Song List Section Page------------------------------
+//Song-List-Section
+let songListSection= document.querySelector('.song-list-section');
+
+//Page Close
+let songListClose= document.querySelector('.song-list-close');
+
+//Song Search
+const searchBox = document.querySelector('.song-search-granpa');
+let search= document.querySelector('.song-search-papa');
+const songSearchBar = document.querySelector('.song-search-input');
+const searchToggler = document.querySelector('.search-toggler');
+
+//Song el (SONG OPTIONS)
+let songEl= document.querySelectorAll('.song-el');
+
+let iconArr= document.querySelectorAll('.song-icon');
+let songNameArr= document.querySelectorAll('.song-name');
+let songTimeArr= document.querySelectorAll('.song-time');
+//------------------------------------------------------------------------------
+
+
+
+//--------------------------Settings Page-------------------------------------
+//Settings Page
+let settingSection = document.querySelector('.settings');
+let settingsBG= document.querySelector('.settings');
+
+//Page Close
 let settingsClose= document.querySelector('.settings-close');
-settingsClose.addEventListener('click', ()=>{
-     settingSectionClose();
 
-});
+//Settings Options
+let settingsInput = document.querySelectorAll('.settings-input');
 
-//***************************************
-/* ------------------------------------------
-SONG SECTION CLOSE (to be used)
------------------------------------------- */
-function songSectionClose(){
+let containerBGbutton = document.querySelector('.containerBG-button');
+let songListBGbutton = document.querySelector('.songListBG-button');
+let settingsBGbutton = document.querySelector('.settingsBG-button');
 
-          containerSection.classList.add('Cactive');
+
+let buttonBG= document.querySelectorAll('.btn');
+let buttonBGbutton = document.querySelector('.buttonBG-button');
+
+let songElementBGbutton = document.querySelector('.songElementBG-button');
+
+
+
+
+
+/* **************************************************
+.                           ALL TO-BE-USED FUNCTIONS
+************************************************** */
+function songListSectionClose(){
+
+          containerSectionPage.classList.add('Cactive');
 
           setTimeout(()=>{
-               songSection.classList.remove('active');
+               songListSection.classList.remove('active');
           }, 100)
 
           setTimeout(()=>{
-               songSection.style.zIndex = '100';
-               containerSection.style.zIndex = '10';
+               songListSection.style.zIndex = '100';
+               containerSectionPage.style.zIndex = '10';
           }, 1000)
 }
-/* ------------------------------------------
-SONG SECTION CLOSE (to be used)
------------------------------------------- */
+
 function settingSectionClose(){
 
-          containerSection.classList.add('Cactive');
+          containerSectionPage.classList.add('Cactive');
 
           setTimeout(()=>{
                settingSection.classList.remove('Sactive');
@@ -389,12 +344,15 @@ function settingSectionClose(){
 
           setTimeout(()=>{
                settingSection.style.zIndex = '100';
-               containerSection.style.zIndex = '10';
+               containerSectionPage.style.zIndex = '10';
           }, 1000)
 }
-/* ------------------------------------------
-.         SONG CHANGE (to be used)
------------------------------------------- */
+
+function songSearchHide(){
+     searchBox.style.display = 'none';
+     searchToggler.style.display = 'flex';
+}
+
 function songChange(){
      for (let j=0; j<cardArr.length; j++){
           cardArr[j].src = songList[playingSongNum].image;
@@ -404,36 +362,147 @@ function songChange(){
      uta.play();
 }
 
-//---------------------------------------deefault
-let playingSongNum =11;
+function toggleLike(){
+
+     if(like.style.color ==='red'){
+          like.style.color ='#fff';
+     } else{
+          like.style.color ='red';
+     }
+
+}
+
+
+
+
+
+/* **************************************************
+.   Writing SONG Icon + Name + Time in the Song-List-Section
+************************************************** */
+for(let i=0; i<songList.length; i++){
+     songNameArr[i].textContent = songList[i].name;
+     songTimeArr[i].textContent = songList[i].time;
+     iconArr[i].style.backgroundImage = `url(${songList[i].image})`;
+}
+
+
+
+
+
+/* **************************************************
+.                               REAL JavaScript STARTS
+************************************************** */
+
+
+
+//-------------OPEN-CLOSE Song List Section Page----------------
+//Angle icon in the Container Page
+angleDown.addEventListener('click', ()=>{
+
+     songListSection.classList.add('active');
+
+          setTimeout(()=>{
+               containerSectionPage.classList.remove('Cactive');
+          }, 100)
+          setTimeout(()=>{
+               containerSectionPage.style.zIndex = '100';
+               songListSection.style.zIndex = '10';
+          }, 1000)
+});
+
+//Song List Section Close
+songListClose.addEventListener('click', ()=>{
+     songListSectionClose();
+
+     setTimeout(()=>{
+          songSearchHide();
+     }, 900)
+
+});
+//------------------------------------------------------------------------------
+
+
+
+//-----------------OPEN-CLOSE Settings Page-----------------------
+//Cogs
+cogs.addEventListener('click', ()=>{
+
+     settingSection.classList.add('Sactive');
+
+          setTimeout(()=>{
+               containerSectionPage.classList.remove('Cactive');
+          }, 100)
+          setTimeout(()=>{
+               containerSectionPage.style.zIndex = '100';
+               settingSection.style.zIndex = '10';
+          }, 1000)
+});
+
+//Settings close
+settingsClose.addEventListener('click', ()=>{
+     settingSectionClose();
+
+});
+//------------------------------------------------------------------------------
+
+
+
+//-----------------------------Song Search---------------------------------
+//Song-Search Toggle (Reveal and Hide)
+searchToggler.addEventListener('click', ()=>{
+     searchBox.style.display = 'flex';
+     searchToggler.style.display = 'none';
+})
+
+//Song-Search Filter
+songSearchBar.addEventListener('keyup', (e)=>{
+     const searchTerm = e.target.value.toLowerCase();
+
+     for(let i=0; i<songList.length; i++){
+          const songTitle = songList[i].searchName.toLowerCase();
+
+          if(songTitle.indexOf(searchTerm) != -1){
+               songEl[i].style.display = 'flex';
+          } else{
+               songEl[i].style.display = 'none';
+          }
+     }
+
+
+
+})
+//------------------------------------------------------------------------------
+
+
+
+//---------------------Default Song in Carousel---------------------------
 for (let j=0; j<cardArr.length; j++){
      cardArr[j].src = songList[playingSongNum].image;
 }
 
 uta.src = songList[playingSongNum].song;
+//------------------------------------------------------------------------------
 
-//-----------------------------------------------------------------
 
 
-/* *******************************************************
-************************ONCLICKS 2.0******************* */
-//song list el
-for(let i=0; i<elArr.length; i++){
-     elArr[i].addEventListener('click', ()=>{
+//----------------------Song List SONG OPTION-------------------------
+//Song list el
+for(let i=0; i<songEl.length; i++){
+     songEl[i].addEventListener('click', ()=>{
           playingSongNum = i;
 
-          songSectionClose();
+          songListSectionClose();
 
           songChange();
 
      });
 }
-//--------------------------------------------------------------
+//------------------------------------------------------------------------------
 
-//play
-let play= document.querySelector('#play');
-let playing =true;
 
+
+//-------------------------CONTROLS--------------------------------------
+//Play
 play.addEventListener('click', ()=>{
      if(playing){
           play.classList.add('fa-play')
@@ -449,10 +518,8 @@ play.addEventListener('click', ()=>{
           playing = true;
      }
 });
-//--------------------------------------------------------------
-//next
-let next= document.querySelector('#next');
 
+//Next
 next.addEventListener('click', ()=>{
      if(playingSongNum<songList.length -1){
           playingSongNum++;
@@ -466,11 +533,8 @@ next.addEventListener('click', ()=>{
      play.classList.remove('fa-play')
      play.classList.add('fa-pause')
 });
-//--------------------------------------------------------------
 
-//prev
-let prev= document.querySelector('#prev');
-
+//Prev
 prev.addEventListener('click', ()=>{
      if(playingSongNum >0){
           playingSongNum--;
@@ -484,66 +548,46 @@ prev.addEventListener('click', ()=>{
      play.classList.remove('fa-play')
      play.classList.add('fa-pause')
 });
-//--------------------------------------------------------------
 
-//like
-let like= document.querySelector('#like')
+//Like
 like.addEventListener('click', toggleLike);
 
-let carouselCard= document.querySelectorAll('.card');
-
+//Carousel Like
 for(let i=0; i<carouselCard.length; i++){
      carouselCard[i].addEventListener('click', toggleLike);
 }
+//------------------------------------------------------------------------------
 
 
-function toggleLike(){
 
-     if(like.style.color ==='red'){
-          like.style.color ='#fff';
-     } else{
-          like.style.color ='red';
-     }
-
-}
-/* -----------------------------------------------------------------------
-.                                  SETTINGS
------------------------------------------------------------------------- */
-
-//**************SETTINGS INPUT PLACEHOLDERS
-let settingsInput = document.querySelectorAll('.settings-input');
-
+//-------------------Settings Input Placeholders-------------------------
 for(let i=0; i<settingsInput.length; i++){
      settingsInput[i].placeholder = 'Type a Color';
 }
+//------------------------------------------------------------------------------
 
+
+
+//---------------------------Settings Options-------------------------------
 //---------------ContainerBG
-let containerBG= document.querySelector('.container');
-let containerBGbutton = document.querySelector('.containerBG-button');
-
 containerBGbutton.addEventListener('click', ()=>{
      let userContainerBG= document.querySelector('.containerBG-input').value;
           settingSectionClose();
 
-          containerBG.style.background = userContainerBG;
+          containerSectionPage.style.background = userContainerBG;
 
 })
-//---------------SongListBG
-let songListBG= document.querySelector('.song-list-section');
-let songListBGbutton = document.querySelector('.songListBG-button');
 
+//---------------SongListBG
 songListBGbutton.addEventListener('click', ()=>{
      let userSongListBG= document.querySelector('.songListBG-input').value;
           settingSectionClose();
 
-          songListBG.style.background = userSongListBG;
+          songListSection.style.background = userSongListBG;
 
 })
 
 //---------------SettingsBG
-let settingsBG= document.querySelector('.settings');
-let settingsBGbutton = document.querySelector('.settingsBG-button');
-
 settingsBGbutton.addEventListener('click', ()=>{
      let userSettingsBG= document.querySelector('.settingsBG-input').value;
 
@@ -552,14 +596,11 @@ settingsBGbutton.addEventListener('click', ()=>{
 })
 
 //---------------SongElementBG
-let songElementBG= document.querySelectorAll('.song-el');
-let songElementBGbutton = document.querySelector('.songElementBG-button');
-
 songElementBGbutton.addEventListener('click', ()=>{
      let userSongElementBG= document.querySelector('.songElementBG-input').value;
 
-          for(let i=0; i<songElementBG.length; i++){
-               songElementBG[i].style.background = userSongElementBG;
+          for(let i=0; i<songEl.length; i++){
+               songEl[i].style.background = userSongElementBG;
           }
 
           settingSectionClose();
@@ -567,10 +608,6 @@ songElementBGbutton.addEventListener('click', ()=>{
 });
 
 //---------------ButtonBG
-let buttonBG= document.querySelectorAll('.btn');
-let buttonBGbutton = document.querySelector('.buttonBG-button');
-let search= document.querySelector('.song-search-papa');
-
 buttonBGbutton.addEventListener('click', ()=>{
      let userButtonBG= document.querySelector('.buttonBG-input').value;
           settingSectionClose();
@@ -585,15 +622,11 @@ buttonBGbutton.addEventListener('click', ()=>{
 
 
 });
+//------------------------------------------------------------------------------
 
 
 
-/* ******************************************
-.                                  KANJI
-******************************************* */
-let kanji = document.querySelector('h1');
-let wrapper = document.querySelector('.wrapper');
-let bgi = 'url("Styles/images-in-styles/bg.png") center/cover';
+//-----------------------------KANJI-----------------------------------------
 kanji.addEventListener('click', ()=>{
           if(wrapper.style.background == 'none'){
                wrapper.style.background = bgi;
@@ -601,3 +634,4 @@ kanji.addEventListener('click', ()=>{
                wrapper.style.background = 'none';
           }
 })
+//------------------------------------------------------------------------------
