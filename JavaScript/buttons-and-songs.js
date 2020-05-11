@@ -257,31 +257,31 @@ const carouselCardDiv= document.querySelectorAll('.card');
 const carouselCardImg= document.querySelectorAll('.card-img');
 
 //Page Change Icons
-let angleDown= document.querySelector('.fa-angle-down');
-let cogs= document.querySelector('.fa-cogs');
+const cogs= document.querySelector('.fa-cogs');
+const angleDown= document.querySelector('.fa-angle-down');
 
 //Controls
-let play= document.querySelector('#play');
-let next= document.querySelector('#next');
-let prev= document.querySelector('#prev');
-let like= document.querySelector('#like');
+const play= document.querySelector('#play');
+const next= document.querySelector('#next');
+const prev= document.querySelector('#prev');
+const like= document.querySelector('#like');
 
 //Controls (Play Next Prev) + Settings
-let allBtns= document.querySelectorAll('.btn');
+const allBtns= document.querySelectorAll('.btn');
 //------------------------------------------------------------------------------
 
 
 
 //---------------------Song List Section Page------------------------------
 //Song-List-Section
-let songListSectionPage= document.querySelector('.song-list-section');
+const songListSectionPage= document.querySelector('.song-list-section');
 
 //Page Close
-let songListClose= document.querySelector('.song-list-close');
+const songListClose= document.querySelector('.song-list-close');
 
 //Song Search
 const searchBox = document.querySelector('.song-search-granpa');
-let search= document.querySelector('.song-search-papa');
+const search= document.querySelector('.song-search-papa');
 const songSearchInput = document.querySelector('.song-search-input');
 const songSearchTogglerH = document.querySelector('.search-toggler');
 
@@ -302,21 +302,21 @@ const songTimeArr= document.querySelectorAll('.song-time');*/
 
 //--------------------------Settings Page-------------------------------------
 //Settings Page
-let settingsPage = document.querySelector('.settings');
+const settingsPage = document.querySelector('.settings');
 
 //Page Close
-let settingsClose= document.querySelector('.settings-close');
+const settingsClose= document.querySelector('.settings-close');
 
 //Settings Options
-let settingsInput = document.querySelectorAll('.settings-input');
+const settingsInput = document.querySelectorAll('.settings-input');
 
-let containerBGbutton = document.querySelector('.containerBG-button');
-let songListBGbutton = document.querySelector('.songListBG-button');
-let settingsBGbutton = document.querySelector('.settingsBG-button');
+const containerBGbutton = document.querySelector('.containerBG-button');
+const songListBGbutton = document.querySelector('.songListBG-button');
+const settingsBGbutton = document.querySelector('.settingsBG-button');
 
 
-let buttonBGbutton = document.querySelector('.buttonBG-button');
-let songElementBGbutton = document.querySelector('.songElementBG-button');
+const buttonBGbutton = document.querySelector('.buttonBG-button');
+const songElementBGbutton = document.querySelector('.songElementBG-button');
 //------------------------------------------------------------------------------
 
 
