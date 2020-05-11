@@ -285,17 +285,17 @@ let search= document.querySelector('.song-search-papa');
 const songSearchInput = document.querySelector('.song-search-input');
 const songSearchTogglerH = document.querySelector('.search-toggler');
 
-//Song el (SONG OPTIONS)
-let songEl= document.querySelectorAll('.song-el');
+//Song el holder
 const listHolder = document.querySelector('.list-holder');
 
 
 /* ------------------------------These Variables are defined later because
 before creating the dynamic Song Options, I can not define it Here
 
-let songIconArr= document.querySelectorAll('.song-icon');
+const songEl= document.querySelectorAll('.song-el');
+const songIconArr= document.querySelectorAll('.song-icon');
 const songNameArr= document.querySelectorAll('.song-name');
-let songTimeArr= document.querySelectorAll('.song-time');*/
+const songTimeArr= document.querySelectorAll('.song-time');*/
 //------------------------------------------------------------------------------
 
 
@@ -387,14 +387,16 @@ function toggleLike(){
 ************************************************** */
 
 for(let i = 0; i<songList.length - 1; i++){
-     const songElSample = document.querySelector('.song-el').cloneNode(true);
-     listHolder.appendChild(songElSample);
+     const songElClone = document.querySelector('.song-el').cloneNode(true);
+     listHolder.appendChild(songElClone);
 }
 
 /* I can not define these variables before creating the elements they draw out from the DOM*/
+//Song El (SONG OPTIONS)
+const songEl= document.querySelectorAll('.song-el');
 const songNameArr= document.querySelectorAll('.song-name');
-let songIconArr= document.querySelectorAll('.song-icon');
-let songTimeArr= document.querySelectorAll('.song-time');
+const songIconArr= document.querySelectorAll('.song-icon');
+const songTimeArr= document.querySelectorAll('.song-time');
 
 /* **************************************************
 .   Writing SONG Icon + Name + Time in the Song-List-Section
