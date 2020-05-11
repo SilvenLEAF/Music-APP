@@ -435,8 +435,13 @@ angleDown.addEventListener('click', ()=>{
 songListClose.addEventListener('click', ()=>{
      songListSectionPageClose();
 
-     setTimeout(()=>{
+     songSearchInput.value = '';
+
+          setTimeout(()=>{
           songSearchHide();
+          for(let i=0; i<songEl.length; i++){
+               songEl[i].style.display = 'flex';
+          }
      }, 900)
 
 });
