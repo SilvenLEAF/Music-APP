@@ -287,10 +287,15 @@ const songSearchTogglerH = document.querySelector('.search-toggler');
 
 //Song el (SONG OPTIONS)
 let songEl= document.querySelectorAll('.song-el');
+const listHolder = document.querySelector('.list-holder');
+
+
+/* ------------------------------These Variables are defined later because
+before creating the dynamic Song Options, I can not define it Here
 
 let songIconArr= document.querySelectorAll('.song-icon');
-let songNameArr= document.querySelectorAll('.song-name');
-let songTimeArr= document.querySelectorAll('.song-time');
+const songNameArr= document.querySelectorAll('.song-name');
+let songTimeArr= document.querySelectorAll('.song-time');*/
 //------------------------------------------------------------------------------
 
 
@@ -378,6 +383,20 @@ function toggleLike(){
 
 
 /* **************************************************
+.            DYNAMIC Song El (Song Option) Creator
+************************************************** */
+
+for(let i = 0; i<songList.length - 1; i++){
+     const songElSample = document.querySelector('.song-el').cloneNode(true);
+     listHolder.appendChild(songElSample);
+}
+
+/* I can not define these variables before creating the elements they draw out from the DOM*/
+const songNameArr= document.querySelectorAll('.song-name');
+let songIconArr= document.querySelectorAll('.song-icon');
+let songTimeArr= document.querySelectorAll('.song-time');
+
+/* **************************************************
 .   Writing SONG Icon + Name + Time in the Song-List-Section
 ************************************************** */
 for(let i=0; i<songList.length; i++){
@@ -385,8 +404,6 @@ for(let i=0; i<songList.length; i++){
      songTimeArr[i].textContent = songList[i].time;
      songIconArr[i].style.backgroundImage = `url(${songList[i].image})`;
 }
-
-
 
 
 
