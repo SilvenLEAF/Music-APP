@@ -172,6 +172,9 @@ let songList = [
 /* *******************************************************
 ******************************************************** */
 
+/* *******************************************************
+******************************************************** */
+
 let cardArr= document.querySelectorAll('.card-img');
 let iconArr= document.querySelectorAll('.song-icon');
 let songTimeArr= document.querySelectorAll('.song-time');

@@ -70,18 +70,24 @@ body{
 /* ---------------------------------------
 .                SETTINGS
 ---------------------------------------- */
+.copyright-holder{
+     width: 70vw;
+     height: 70px;
+
+     display: flex;
+     flex-flow: column;
+     align-content: center;
+     justify-content: center;
+}
 .copyRight{
      font-size: 90%;
      color: #fff;
 
-     width: 50%;
-     text-align: center;
 
+     text-align: center;
      user-select: none;
 }
 .song-list-section .copyRight, .settings .copyRight{
-     position: fixed;
-     top: 40px;
      font-weight: bold;
 
 }
