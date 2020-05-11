@@ -138,10 +138,10 @@ let songList = [
           song: 'songs/pk.mp3'
      },
      {
-          name: 'ヴェイル',
-          image: 'anime/fire-force.jpg',
+          name: 'オーバーロード',
+          image: 'anime/overlord.jpg',
           time: '3:43',
-          song: 'songs/fire-force-end.mp3'
+          song: 'songs/overlord.mp3'
      },
      {
           name: '壁',
@@ -160,9 +160,16 @@ let songList = [
           image: 'anime/death-note.jpg',
           time: '3:39',
           song: 'songs/death-note.mp3'
+     },
+     {
+          name: 'ヴェイル',
+          image: 'anime/fire-force.jpg',
+          time: '3:43',
+          song: 'songs/fire-force-end.mp3'
      }
 
 ]
+console.log(songList.length)
 /* *******************************************************
 ******************************************************** */
 
