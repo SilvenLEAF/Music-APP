@@ -348,7 +348,7 @@ let like= document.querySelector('#like')
 like.addEventListener('click', ()=>{
 
      if(like.style.color ==='red'){
-          like.style.color ='black';
+          like.style.color ='#fff';
      } else{
           like.style.color ='red';
      }
@@ -417,14 +417,19 @@ songElementBGbutton.addEventListener('click', ()=>{
 
 //---------------ButtonBG
 let buttonBG= document.querySelectorAll('.btn');
+let carouselCard= document.querySelectorAll('.card');
 let buttonBGbutton = document.querySelector('.buttonBG-button');
 
 buttonBGbutton.addEventListener('click', ()=>{
      let userButtonBG= document.querySelector('.buttonBG-input').value;
           settingSectionClose();
 
-          for(let i=0; i<songElementBG.length; i++){
+          for(let i=0; i<buttonBG.length; i++){
                buttonBG[i].style.background = userButtonBG;
+          };
+
+          for(let j=0; j<carouselCard.length; j++){
+               carouselCard[j].style.borderColor = userButtonBG;
           };
 
 

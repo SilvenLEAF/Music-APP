@@ -76,6 +76,8 @@ body{
 
      width: 50%;
      text-align: center;
+
+     user-select: none;
 }
 .song-list-section .copyRight, .settings .copyRight{
      position: fixed;
@@ -89,4 +91,3 @@ body{
      width: 100vw;
      color: #300;
 }
- 

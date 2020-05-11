@@ -1,15 +1,15 @@
 /* ------------------------------------------------------------------- */
 
 :root{
-     --containerBG: -webkit-linear-gradient(top, deeppink 50%, #fff 50%);
-     --song-list-sectionBG: -webkit-linear-gradient(top, deeppink 50%, #fff 50%);
+     --containerBG: deeppink;
+     --song-list-sectionBG: deeppink;
      --wrapperBG:  url('images-in-styles/bg.png') center/cover;
-     --settingsBG: -webkit-linear-gradient(top, deeppink 50%, #fff 50%);
+     --settingsBG: deeppink;
 
      /* ----------------------------
      .          SONGS LIST
      ----------------------------- */
-     --song-el: #aaa;
+     --song-el: #ddd;
      --song-name: #500;
      --song-el-shadow: rgba(0, 0, 0, 0.4);
 
