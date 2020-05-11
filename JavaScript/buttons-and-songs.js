@@ -245,16 +245,16 @@ let playing =true;
 
 //------------------------------Container Page---------------------------------
 //Container and Wrapper
-let containerSectionPage = document.querySelector('.container');
-let wrapper = document.querySelector('.wrapper');
+const containerSectionPage = document.querySelector('.container');
+const wrapper = document.querySelector('.wrapper');
 
 //Sparkling and Kanji
 let bgi = 'url("Styles/images-in-styles/bg.png") center/cover';
-let kanji = document.querySelector('h1');
+const kanji = document.querySelector('h1');
 
 //carousel
-let carouselCard= document.querySelectorAll('.card');
-let cardArr= document.querySelectorAll('.card-img');
+const carouselCardDiv= document.querySelectorAll('.card');
+const carouselCardImg= document.querySelectorAll('.card-img');
 
 //Page Change Icons
 let angleDown= document.querySelector('.fa-angle-down');
@@ -264,14 +264,17 @@ let cogs= document.querySelector('.fa-cogs');
 let play= document.querySelector('#play');
 let next= document.querySelector('#next');
 let prev= document.querySelector('#prev');
-let like= document.querySelector('#like')
+let like= document.querySelector('#like');
+
+//Controls (Play Next Prev) + Settings
+let allBtns= document.querySelectorAll('.btn');
 //------------------------------------------------------------------------------
 
 
 
 //---------------------Song List Section Page------------------------------
 //Song-List-Section
-let songListSection= document.querySelector('.song-list-section');
+let songListSectionPage= document.querySelector('.song-list-section');
 
 //Page Close
 let songListClose= document.querySelector('.song-list-close');
@@ -279,13 +282,13 @@ let songListClose= document.querySelector('.song-list-close');
 //Song Search
 const searchBox = document.querySelector('.song-search-granpa');
 let search= document.querySelector('.song-search-papa');
-const songSearchBar = document.querySelector('.song-search-input');
-const searchToggler = document.querySelector('.search-toggler');
+const songSearchInput = document.querySelector('.song-search-input');
+const songSearchTogglerH = document.querySelector('.search-toggler');
 
 //Song el (SONG OPTIONS)
 let songEl= document.querySelectorAll('.song-el');
 
-let iconArr= document.querySelectorAll('.song-icon');
+let songIconArr= document.querySelectorAll('.song-icon');
 let songNameArr= document.querySelectorAll('.song-name');
 let songTimeArr= document.querySelectorAll('.song-time');
 //------------------------------------------------------------------------------
@@ -294,8 +297,7 @@ let songTimeArr= document.querySelectorAll('.song-time');
 
 //--------------------------Settings Page-------------------------------------
 //Settings Page
-let settingSection = document.querySelector('.settings');
-let settingsBG= document.querySelector('.settings');
+let settingsPage = document.querySelector('.settings');
 
 //Page Close
 let settingsClose= document.querySelector('.settings-close');
@@ -308,10 +310,9 @@ let songListBGbutton = document.querySelector('.songListBG-button');
 let settingsBGbutton = document.querySelector('.settingsBG-button');
 
 
-let buttonBG= document.querySelectorAll('.btn');
 let buttonBGbutton = document.querySelector('.buttonBG-button');
-
 let songElementBGbutton = document.querySelector('.songElementBG-button');
+//------------------------------------------------------------------------------
 
 
 
@@ -320,42 +321,42 @@ let songElementBGbutton = document.querySelector('.songElementBG-button');
 /* **************************************************
 .                           ALL TO-BE-USED FUNCTIONS
 ************************************************** */
-function songListSectionClose(){
+function songListSectionPageClose(){
 
           containerSectionPage.classList.add('Cactive');
 
           setTimeout(()=>{
-               songListSection.classList.remove('active');
+               songListSectionPage.classList.remove('active');
           }, 100)
 
           setTimeout(()=>{
-               songListSection.style.zIndex = '100';
+               songListSectionPage.style.zIndex = '100';
                containerSectionPage.style.zIndex = '10';
           }, 1000)
 }
 
-function settingSectionClose(){
+function settingsPageClose(){
 
           containerSectionPage.classList.add('Cactive');
 
           setTimeout(()=>{
-               settingSection.classList.remove('Sactive');
+               settingsPage.classList.remove('Sactive');
           }, 100);
 
           setTimeout(()=>{
-               settingSection.style.zIndex = '100';
+               settingsPage.style.zIndex = '100';
                containerSectionPage.style.zIndex = '10';
           }, 1000)
 }
 
 function songSearchHide(){
      searchBox.style.display = 'none';
-     searchToggler.style.display = 'flex';
+     songSearchTogglerH.style.display = 'flex';
 }
 
 function songChange(){
-     for (let j=0; j<cardArr.length; j++){
-          cardArr[j].src = songList[playingSongNum].image;
+     for (let j=0; j<carouselCardImg.length; j++){
+          carouselCardImg[j].src = songList[playingSongNum].image;
      }
 
      uta.src = songList[playingSongNum].song;
@@ -382,7 +383,7 @@ function toggleLike(){
 for(let i=0; i<songList.length; i++){
      songNameArr[i].textContent = songList[i].name;
      songTimeArr[i].textContent = songList[i].time;
-     iconArr[i].style.backgroundImage = `url(${songList[i].image})`;
+     songIconArr[i].style.backgroundImage = `url(${songList[i].image})`;
 }
 
 
@@ -399,20 +400,20 @@ for(let i=0; i<songList.length; i++){
 //Angle icon in the Container Page
 angleDown.addEventListener('click', ()=>{
 
-     songListSection.classList.add('active');
+     songListSectionPage.classList.add('active');
 
           setTimeout(()=>{
                containerSectionPage.classList.remove('Cactive');
           }, 100)
           setTimeout(()=>{
                containerSectionPage.style.zIndex = '100';
-               songListSection.style.zIndex = '10';
+               songListSectionPage.style.zIndex = '10';
           }, 1000)
 });
 
 //Song List Section Close
 songListClose.addEventListener('click', ()=>{
-     songListSectionClose();
+     songListSectionPageClose();
 
      setTimeout(()=>{
           songSearchHide();
@@ -427,20 +428,20 @@ songListClose.addEventListener('click', ()=>{
 //Cogs
 cogs.addEventListener('click', ()=>{
 
-     settingSection.classList.add('Sactive');
+     settingsPage.classList.add('Sactive');
 
           setTimeout(()=>{
                containerSectionPage.classList.remove('Cactive');
           }, 100)
           setTimeout(()=>{
                containerSectionPage.style.zIndex = '100';
-               settingSection.style.zIndex = '10';
+               settingsPage.style.zIndex = '10';
           }, 1000)
 });
 
 //Settings close
 settingsClose.addEventListener('click', ()=>{
-     settingSectionClose();
+     settingsPageClose();
 
 });
 //------------------------------------------------------------------------------
@@ -449,13 +450,13 @@ settingsClose.addEventListener('click', ()=>{
 
 //-----------------------------Song Search---------------------------------
 //Song-Search Toggle (Reveal and Hide)
-searchToggler.addEventListener('click', ()=>{
+songSearchTogglerH.addEventListener('click', ()=>{
      searchBox.style.display = 'flex';
-     searchToggler.style.display = 'none';
+     songSearchTogglerH.style.display = 'none';
 })
 
 //Song-Search Filter
-songSearchBar.addEventListener('keyup', (e)=>{
+songSearchInput.addEventListener('keyup', (e)=>{
      const searchTerm = e.target.value.toLowerCase();
 
      for(let i=0; i<songList.length; i++){
@@ -476,8 +477,8 @@ songSearchBar.addEventListener('keyup', (e)=>{
 
 
 //---------------------Default Song in Carousel---------------------------
-for (let j=0; j<cardArr.length; j++){
-     cardArr[j].src = songList[playingSongNum].image;
+for (let j=0; j<carouselCardImg.length; j++){
+     carouselCardImg[j].src = songList[playingSongNum].image;
 }
 
 uta.src = songList[playingSongNum].song;
@@ -491,7 +492,7 @@ for(let i=0; i<songEl.length; i++){
      songEl[i].addEventListener('click', ()=>{
           playingSongNum = i;
 
-          songListSectionClose();
+          songListSectionPageClose();
 
           songChange();
 
@@ -553,8 +554,8 @@ prev.addEventListener('click', ()=>{
 like.addEventListener('click', toggleLike);
 
 //Carousel Like
-for(let i=0; i<carouselCard.length; i++){
-     carouselCard[i].addEventListener('click', toggleLike);
+for(let i=0; i<carouselCardDiv.length; i++){
+     carouselCardDiv[i].addEventListener('click', toggleLike);
 }
 //------------------------------------------------------------------------------
 
@@ -572,7 +573,7 @@ for(let i=0; i<settingsInput.length; i++){
 //---------------ContainerBG
 containerBGbutton.addEventListener('click', ()=>{
      let userContainerBG= document.querySelector('.containerBG-input').value;
-          settingSectionClose();
+          settingsPageClose();
 
           containerSectionPage.style.background = userContainerBG;
 
@@ -581,9 +582,9 @@ containerBGbutton.addEventListener('click', ()=>{
 //---------------SongListBG
 songListBGbutton.addEventListener('click', ()=>{
      let userSongListBG= document.querySelector('.songListBG-input').value;
-          settingSectionClose();
+          settingsPageClose();
 
-          songListSection.style.background = userSongListBG;
+          songListSectionPage.style.background = userSongListBG;
 
 })
 
@@ -591,7 +592,7 @@ songListBGbutton.addEventListener('click', ()=>{
 settingsBGbutton.addEventListener('click', ()=>{
      let userSettingsBG= document.querySelector('.settingsBG-input').value;
 
-          settingsBG.style.background = userSettingsBG;
+          settingsPage.style.background = userSettingsBG;
 
 })
 
@@ -603,21 +604,21 @@ songElementBGbutton.addEventListener('click', ()=>{
                songEl[i].style.background = userSongElementBG;
           }
 
-          settingSectionClose();
+          settingsPageClose();
 
 });
 
 //---------------ButtonBG
 buttonBGbutton.addEventListener('click', ()=>{
      let userButtonBG= document.querySelector('.buttonBG-input').value;
-          settingSectionClose();
+          settingsPageClose();
           search.style.borderColor = userButtonBG;
-          for(let i=0; i<buttonBG.length; i++){
-               buttonBG[i].style.background = userButtonBG;
+          for(let i=0; i<allBtns.length; i++){
+               allBtns[i].style.background = userButtonBG;
           };
 
-          for(let j=0; j<carouselCard.length; j++){
-               carouselCard[j].style.borderColor = userButtonBG;
+          for(let j=0; j<carouselCardDiv.length; j++){
+               carouselCardDiv[j].style.borderColor = userButtonBG;
           };
 
 
