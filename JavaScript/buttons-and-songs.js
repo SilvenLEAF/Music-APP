@@ -390,6 +390,7 @@ for(let i = 0; i<songList.length - 1; i++){
      const songElClone = document.querySelector('.song-el').cloneNode(true);
      listHolder.appendChild(songElClone);
 }
+/*Here we have a -1 because there is already a Song El present. So we need ! less*/
 
 /* I can not define these variables before creating the elements they draw out from the DOM*/
 //Song El (SONG OPTIONS)
