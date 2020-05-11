@@ -244,7 +244,7 @@ songListClose.addEventListener('click', ()=>{
      setTimeout(()=>{
           songSearchHide();
      }, 900)
-     
+
 });
 
 
@@ -487,11 +487,12 @@ songElementBGbutton.addEventListener('click', ()=>{
 //---------------ButtonBG
 let buttonBG= document.querySelectorAll('.btn');
 let buttonBGbutton = document.querySelector('.buttonBG-button');
+let search= document.querySelector('.song-search-papa');
 
 buttonBGbutton.addEventListener('click', ()=>{
      let userButtonBG= document.querySelector('.buttonBG-input').value;
           settingSectionClose();
-
+          search.style.borderColor = userButtonBG;
           for(let i=0; i<buttonBG.length; i++){
                buttonBG[i].style.background = userButtonBG;
           };
