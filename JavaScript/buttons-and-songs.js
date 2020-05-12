@@ -289,7 +289,8 @@ let songList = [
           song: 'songs/frozen-when-Im-older.mp3',
 
           searchName: 'Disney Frozen Olaf When I\'m older'
-     },
+     }
+
 
 ]
 
@@ -563,6 +564,8 @@ settingsClose.addEventListener('click', ()=>{
 songSearchTogglerH.addEventListener('click', ()=>{
      searchBox.style.display = 'flex';
      songSearchTogglerH.style.display = 'none';
+
+     songSearchInput.focus();
 })
 
 //Song-Search Filter
