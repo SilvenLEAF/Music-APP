@@ -21,6 +21,12 @@
      position: relative;
      top: calc(var(--carousel-padding-top) * (-1));
 }
+@media screen and (min-width: 900px) {
+     .granny{
+          transform: scale(1.5);
+          top: -200px;
+     }
+}
 .papa{
      width: 100%;
      position: relative;

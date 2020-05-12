@@ -1,25 +1,39 @@
-.left-icon{
-     font-size: 350%;
-     font-weight: bolder;
-     cursor: pointer;
+.page-change-icons-holder{
+     height: 100px;
+     width: 100vw;
+
+
+     position: absolute;
+     top: 0;
+     z-index: 3;
+
+     display: flex;
+     justify-content: center;
+}
+.page-change-icons-papa{
+     width: calc(100vw - 50px);
 
      position: absolute;
      top: 20px;
-     left: 50px;
      z-index: 100;
 
+     display: flex;
+     justify-content:space-between;
 }
-
-.right-icon{
+@media screen and (min-width: 900px) {
+     .page-change-icons-papa{
+          width: var(--pcCenteringWidth);
+     }
+}
+.fa-angle-down{
+     font-size: 350%;
+     font-weight: bolder;
+     cursor: pointer;
+}
+.close-icon, .page-change-cogs{
      font-size: 250%;
      cursor: pointer;
-
-     position: absolute;
-     top: 25px;
-     right: 50px;
-     z-index: 100;
 }
-
 .fa-close{
      position: fixed;
      top: 15px;

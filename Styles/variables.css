@@ -1,6 +1,11 @@
 /* ------------------------------------------------------------------- */
 
 :root{
+     /* ------RESPONSIVE CENTERING----- */
+     --pcCenteringWidth: 850px;
+     /* ----------------------------
+     .          CONTAINER
+     ----------------------------- */
      --containerBG: deeppink;
      --song-list-sectionBG: deeppink;
      --wrapperBG:  url('images-in-styles/bg.png') center/cover;

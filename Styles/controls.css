@@ -1,3 +1,14 @@
+.controls-board-holder{
+     width: 100vw;
+     height: 110px;
+
+     position: fixed;
+     bottom: 0;
+     z-index: 100;
+
+     display: flex;
+     justify-content: center;
+}
 #controls{
      width: 100%;
      height: 80px;
@@ -6,8 +17,12 @@
      align-items: center;
      justify-content: space-around;
 
-     position: absolute;
-     bottom: 30px;
+     margin-bottom: 30px;
+}
+@media screen and (min-width: 900px) {
+     #controls{
+          width: var(--pcCenteringWidth);
+     }
 }
 #controls > div{
      cursor: pointer;
