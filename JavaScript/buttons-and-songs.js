@@ -33,6 +33,14 @@ let songList = [
           searchName: 'Tokyo ghoul Unravel'
      },
      {
+          name: '恋愛サルクェション',
+          image: 'images/renai-circulation.png',
+          time: '4:14',
+          song: 'songs/renai-circulation.mp3',
+
+          searchName: 'Renai Circulation'
+     },
+     {
           name: 'ステンダプ',
           image: 'images/xwars-2.jpg',
           time: '4:28',
@@ -79,7 +87,7 @@ let songList = [
           time: '3:47',
           song: 'songs/gto-end.mp3',
 
-          searchName: 'GTO End'
+          searchName: 'Great TeacherOnizuka GTO End'
      },
      {
           name: 'インファルノ',
@@ -139,6 +147,14 @@ let songList = [
           searchName: 'Digimon Appli Monsters Be My Light'
      },
      {
+          name: '雪達磨を作ろうか',
+          image: 'images/little-anna-and-elsa.jpg',
+          time: '3:13',
+          song: 'songs/frozen-do-you-wanna-build-a-snowman.mp3',
+
+          searchName: 'Disney Frozen Do you wanna build a snowman'
+     },
+     {
           name: '空の舞勇者',
           image: 'images/xwars.jpg',
           time: '4:49',
@@ -155,12 +171,12 @@ let songList = [
           searchName: 'Digimon Butterfly'
      },
      {
-          name: '保護者',
-          image: 'images/xwars-2.jpg',
-          time: '4:25',
-          song: 'songs/digimon-xwars-x4b.mp3',
+          name: '恋は開けた門',
+          image: 'images/anna-and-kristoff.jpg',
+          time: '2:02',
+          song: 'songs/frozen-love-is-an-door.mp3',
 
-          searchName: 'Digimon Xwars Digimon Fusion The Guardian X4B'
+          searchName: 'Disney Frozen Love is an Open Door'
      },
      {
           name: 'ドクターストーン',
@@ -168,7 +184,7 @@ let songList = [
           time: '3:25',
           song: 'songs/doctor-stone-op-2.mp3',
 
-          searchName: 'Doctor Stone'
+          searchName: 'Doctor Stone OP2'
      },
      {
           name: '不易な毎日',
@@ -187,12 +203,20 @@ let songList = [
           searchName: 'Pokemon Getta Ban Ban'
      },
      {
+          name: '保護者',
+          image: 'images/xwars-2.jpg',
+          time: '4:25',
+          song: 'songs/digimon-xwars-x4b.mp3',
+
+          searchName: 'Digimon Xwars Digimon Fusion The Guardian X4B'
+     },
+     {
           name: '不死者の王',
           image: 'images/overlord.jpg',
           time: '3:43',
           song: 'songs/overlord-op-1.mp3',
 
-          searchName: 'Overlord'
+          searchName: 'Overlord The King of the Undead'
      },
      {
           name: 'ヴェイル',
@@ -201,6 +225,22 @@ let songList = [
           song: 'songs/fire-force-end.mp3',
 
           searchName: 'Fire Force End Veil Fire Force Ending '
+     },
+     {
+          name: '生まれて初めて',
+          image: 'images/frozen-first.jpg',
+          time: '3:45',
+          song: 'songs/frozen-for-the-first-time-in-forever.mp3',
+
+          searchName: 'Disney Frozen For the first time in Forever'
+     },
+     {
+          name: '何処まで行けるか',
+          image: 'images/moana.jpg',
+          time: '2:37',
+          song: 'songs/moana-how-far-Ill-go.mp3',
+
+          searchName: 'Disney Moana How Far I\'ll go'
      },
      {
           name: '増し増し',
@@ -219,13 +259,37 @@ let songList = [
           searchName: 'Youjo Senki Los Los Los'
      },
      {
+          name: '問題もある',
+          image: 'images/trolls.png',
+          time: '2:54',
+          song: 'songs/frozen-fixer-upper.mp3',
+
+          searchName: 'Disney Frozen Fixer Upper Trolls'
+     },
+     {
           name: '高く飛べ',
           image: 'images/haikyuu.jpeg',
           time: '4:02',
           song: 'songs/haikyuu-fly-high.mp3',
 
           searchName: 'Haikyuu Fly High'
-     }
+     },
+     {
+          name: '進撃の巨人',
+          image: 'images/attack-on-titans.jpg',
+          time: '5:18',
+          song: 'songs/attack-on-titans-op.mp3',
+
+          searchName: 'Attack on titans OP Shingeki no kyojin'
+     },
+     {
+          name: '大人に成ったら',
+          image: 'images/olaf.jpg',
+          time: '1:50',
+          song: 'songs/frozen-when-Im-older.mp3',
+
+          searchName: 'Disney Frozen Olaf When I\'m older'
+     },
 
 ]
 
