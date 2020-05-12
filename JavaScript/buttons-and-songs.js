@@ -627,6 +627,7 @@ for(let i=0; i<songEl.length; i++){
           playing = true;
 
           songListSectionPageClose();
+          likeStore();
           songChange();
 
           songSearchInput.value = '';
