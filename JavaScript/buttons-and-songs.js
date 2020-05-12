@@ -302,7 +302,7 @@ let songList = [
 ************************************************** */
 //JavaScript
 let uta = new Audio();
-let playingSongNum =11;
+let playingSongNum = -1;
 let playing =true;
 
 
@@ -499,6 +499,13 @@ angleDown.addEventListener('click', ()=>{
 songListClose.addEventListener('click', ()=>{
      songListSectionPageClose();
 
+     if(playingSongNum = -1){
+          playingSongNum = 0;
+          uta.src = songList[playingSongNum].song;
+          uta.play();
+          playing = true;
+     }
+
      songSearchInput.value = '';
 
           setTimeout(()=>{
@@ -567,10 +574,8 @@ songSearchInput.addEventListener('keyup', (e)=>{
 
 //---------------------Default Song in Carousel---------------------------
 for (let j=0; j<carouselCardImg.length; j++){
-     carouselCardImg[j].src = songList[playingSongNum].image;
+     carouselCardImg[j].src = songList[0].image;
 }
-
-uta.src = songList[playingSongNum].song;
 //------------------------------------------------------------------------------
 
 
@@ -580,6 +585,11 @@ uta.src = songList[playingSongNum].song;
 for(let i=0; i<songEl.length; i++){
      songEl[i].addEventListener('click', ()=>{
           playingSongNum = i;
+
+          play.classList.remove('fa-play');
+          play.classList.add('fa-pause');
+
+          playing = true;
 
           songListSectionPageClose();
 
