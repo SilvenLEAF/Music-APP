@@ -381,6 +381,8 @@ const settingsBGbutton = document.querySelector('.settingsBG-button');
 
 const buttonBGbutton = document.querySelector('.buttonBG-button');
 const songElementBGbutton = document.querySelector('.songElementBG-button');
+
+const countedSongDisplay = document.querySelector('.count-songs');
 //------------------------------------------------------------------------------
 
 
@@ -478,6 +480,10 @@ for(let i=0; i<songList.length; i++){
 .                               REAL JavaScript STARTS
 ************************************************** */
 
+//--------------------------------Song Counter------------------------------
+countedSongDisplay.textContent = songList.length;
+//------------------------------------------------------------------------------
+
 
 
 //-------------OPEN-CLOSE Song List Section Page----------------
@@ -569,8 +575,6 @@ songSearchInput.addEventListener('keyup', (e)=>{
 
 })
 //------------------------------------------------------------------------------
-
-
 
 //---------------------Default Song in Carousel---------------------------
 for (let j=0; j<carouselCardImg.length; j++){

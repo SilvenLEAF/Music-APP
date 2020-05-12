@@ -79,3 +79,6 @@
           flex-flow: column;
      }
 }
+#count-songs-holder{
+     flex-flow: row;
+}
