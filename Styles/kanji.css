@@ -40,6 +40,7 @@
      writing-mode: vertical-rl;
      color: #fff;
      text-shadow: 1px 1px 1px #000;
+     font-weight: bolder;
 
      cursor: pointer;
      user-select: none;

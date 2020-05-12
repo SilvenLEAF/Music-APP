@@ -306,6 +306,8 @@ let uta = new Audio();
 let playingSongNum = -1;
 let playing =true;
 let repeating = 'all';
+let shuffleState = false;
+
 
 
 
@@ -331,8 +333,10 @@ const play= document.querySelector('#play');
 const next= document.querySelector('#next');
 const prev= document.querySelector('#prev');
 
-const like= document.querySelector('#like');
 const repeatBtn = document.querySelector('#repeat');
+const shuffleBtn = document.querySelector('#shuffle');
+const like= document.querySelector('#like');
+const likedSongsBtn = document.querySelector('#liked-songs-btn');
 
 
 //Controls (Play Next Prev) + Settings
@@ -411,6 +415,19 @@ function songListSectionPageClose(){
           }, 1000)
 }
 
+function songListOpen(){
+
+     songListSectionPage.classList.add('active');
+          setTimeout(()=>{
+               containerSectionPage.classList.remove('Cactive');
+          }, 100)
+          setTimeout(()=>{
+               containerSectionPage.style.zIndex = '100';
+               songListSectionPage.style.zIndex = '10';
+          }, 1000)
+
+}
+
 function settingsPageClose(){
 
           containerSectionPage.classList.add('Cactive');
@@ -439,13 +456,28 @@ function songChange(){
      uta.play();
 }
 
+function likeStore(){
+     if(songList[playingSongNum].liked){
+          like.style.color ='red';
+     }else{
+          like.style.color ='#fff';
+     }
+}
+
 function toggleLike(){
 
-     if(like.style.color ==='red'){
+     if(songList[playingSongNum].liked){
+          songList[playingSongNum].liked = false;
           like.style.color ='#fff';
-     } else{
+     }else{
+          songList[playingSongNum].liked = true;
           like.style.color ='red';
      }
+     // if(like.style.color ==='red'){
+     //   like.style.color ='#fff';
+     // } else{
+     //      like.style.color ='red';
+     // }
 
 }
 
@@ -493,16 +525,8 @@ countedSongDisplay.textContent = songList.length;
 //-------------OPEN-CLOSE Song List Section Page----------------
 //Angle icon in the Container Page
 angleDown.addEventListener('click', ()=>{
-
-     songListSectionPage.classList.add('active');
-
-          setTimeout(()=>{
-               containerSectionPage.classList.remove('Cactive');
-          }, 100)
-          setTimeout(()=>{
-               containerSectionPage.style.zIndex = '100';
-               songListSectionPage.style.zIndex = '10';
-          }, 1000)
+     songSearchInput.value = '';
+     songListOpen();
 });
 
 //Song List Section Close
@@ -596,14 +620,26 @@ for(let i=0; i<songEl.length; i++){
      songEl[i].addEventListener('click', ()=>{
           playingSongNum = i;
 
+
           play.classList.remove('fa-play');
           play.classList.add('fa-pause');
 
           playing = true;
 
           songListSectionPageClose();
-
           songChange();
+
+          songSearchInput.value = '';
+
+
+               setTimeout(()=>{
+                    songSearchHide();
+                    for(let i=0; i<songEl.length; i++){
+                         songEl[i].style.display = 'flex';
+                    }
+               }, 900)
+
+
 
      });
 }
@@ -631,33 +667,78 @@ play.addEventListener('click', ()=>{
 
 //Next
 next.addEventListener('click', ()=>{
-     if(playingSongNum<songList.length -1){
-          playingSongNum++;
+     if(shuffleState){
+          let randomShuffleNum = Math.floor(Math.random()*songList.length);
+          playingSongNum = randomShuffleNum;
      }else{
-          playingSongNum =0;
+          if(playingSongNum<songList.length -1){
+               playingSongNum++;
+          }else{
+               playingSongNum =0;
+          }
      }
+
+     likeStore();
      songChange();
 
      playing=true;
 
-     play.classList.remove('fa-play')
-     play.classList.add('fa-pause')
+     play.classList.remove('fa-play');
+     play.classList.add('fa-pause');
 });
 
 //Prev
 prev.addEventListener('click', ()=>{
-     if(playingSongNum >0){
-          playingSongNum--;
+     if(shuffleState){
+          let randomShuffleNum = Math.floor(Math.random()*songList.length);
+          playingSongNum = randomShuffleNum;
      }else{
-          playingSongNum =songList.length -1;
+          if(playingSongNum >0){
+               playingSongNum--;
+          }else{
+               playingSongNum =songList.length -1;
+          }
      }
+     likeStore();
      songChange();
 
      playing=true;
 
-     play.classList.remove('fa-play')
-     play.classList.add('fa-pause')
+     play.classList.remove('fa-play');
+     play.classList.add('fa-pause');
+
 });
+
+//Favourite Songs List
+likedSongsBtn.addEventListener('click', ()=>{
+     for(let i=0; i<songList.length; i++){
+          if(songList[i].liked){
+               songEl[i].style.display = 'flex';
+          } else {
+               songEl[i].style.display = 'none';
+          }
+
+          songListOpen();
+
+     }
+})
+
+//Shuffle
+shuffleBtn.addEventListener('click', ()=>{
+     if(repeating !== 'one'){
+          if(shuffleState){
+               shuffleState = false;
+               shuffleBtn.textContent = 'off';
+          } else{
+               shuffleState = true;
+               shuffleBtn.textContent = 'on';
+          }
+     }else{
+          shuffleState = false;
+     }
+})
+
+
 
 
 //.                                     REPEAT
@@ -667,7 +748,7 @@ repeatBtn.addEventListener( 'click', ()=>{
 
      if (repeating === 'all'){
 
-          repeatBtn.textContent = 'one';
+          repeatBtn.textContent = '1';
           //turned into Repeat ONE
           repeating = 'one';
 
@@ -691,29 +772,37 @@ repeatBtn.addEventListener( 'click', ()=>{
 //On Song END (Repeat or Not)
 uta.addEventListener('ended', ()=>{
 
-     if (repeating === 'all'){
+     if(shuffleState){
+          let randomShuffleNum = Math.floor(Math.random()*songList.length);
 
-          //Repeat ALL
-          if(playingSongNum < songList.length - 1){
-               playingSongNum +=1;
-          } else{
-               playingSongNum = 0;
+          playingSongNum = randomShuffleNum;
+
+     }else{
+
+          if (repeating === 'all'){
+
+               //Repeat ALL
+               if(playingSongNum < songList.length - 1){
+                    playingSongNum +=1;
+               } else{
+                    playingSongNum = 0;
+               }
+
+               //Song songChange
+               // songChange();
+
+
+          } else if (repeating === 'one'){
+
+               //Repeat ONE
+               playingSongNum *= 1;
+
+               //Song songChange
+               // songChange();
           }
-
-          //Song songChange
-          songChange();
-
-
-     } else if (repeating === 'one'){
-
-          //Repeat ONE
-          playingSongNum *= 1;
-
-          //Song songChange
-          songChange();
-
-
      }
+
+     songChange();
 
 });
 //------------------------------------------------------------------------------
