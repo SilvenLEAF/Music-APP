@@ -63,6 +63,9 @@
      text-align: center;
      user-select: none;
 }
+.song-list-section .copyRight, .song-list-section .song-list-h{
+     color: #000;
+}
 .song-list-section .copyRight, .settings .copyRight{
      font-weight: bold;
 
