@@ -446,7 +446,15 @@ function toggleLike(){
 
 
 
+uta.addEventListener('ended', ()=>{
+     if(playingSongNum < songList.length - 1){
+          playingSongNum +=1;
+     } else{
+          playingSongNum = 0;
+     }
 
+     songChange();
+});
 
 /* **************************************************
 .            DYNAMIC Song El (Song Option) Creator
