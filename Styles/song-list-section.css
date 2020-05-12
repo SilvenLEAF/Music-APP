@@ -47,11 +47,11 @@
      color: var(--song-name);
 
 }
-h2{
+.song-list-and-settings-h{
      margin: 0;
      font-weight: bolder;
      font-size: 150%;
-     color: #fff;
+
 
      word-spacing: 5px;
 
