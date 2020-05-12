@@ -505,7 +505,7 @@ angleDown.addEventListener('click', ()=>{
 songListClose.addEventListener('click', ()=>{
      songListSectionPageClose();
 
-     if(playingSongNum = -1){
+     if(playingSongNum == -1){
           playingSongNum = 0;
           uta.src = songList[playingSongNum].song;
           uta.play();
