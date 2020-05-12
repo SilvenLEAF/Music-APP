@@ -118,7 +118,7 @@ let songList = [
           name: '世界最強',
           image: 'images/one-punch-man.jpg',
           time: '3:47',
-          song: 'songs/one-man-punch-hero.mp3',
+          song: 'songs/one-punch-man-hero.mp3',
 
           searchName: 'One Punch Man Openning The Hero'
      },
@@ -148,7 +148,7 @@ let songList = [
      },
      {
           name: '雪達磨を作ろうか',
-          image: 'images/little-anna-and-elsa.jpg',
+          image: 'images/little-anna-and-elsa.png',
           time: '3:13',
           song: 'songs/frozen-do-you-wanna-build-a-snowman.mp3',
 
@@ -174,7 +174,7 @@ let songList = [
           name: '恋は開けた門',
           image: 'images/anna-and-kristoff.jpg',
           time: '2:02',
-          song: 'songs/frozen-love-is-an-door.mp3',
+          song: 'songs/frozen-love-is-an-open-door.mp3',
 
           searchName: 'Disney Frozen Love is an Open Door'
      },
@@ -262,7 +262,7 @@ let songList = [
           name: '問題もある',
           image: 'images/trolls.png',
           time: '2:54',
-          song: 'songs/frozen-fixer-upper.mp3',
+          song: 'songs/frozen-trolls.mp3',
 
           searchName: 'Disney Frozen Fixer Upper Trolls'
      },
