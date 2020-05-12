@@ -21,13 +21,19 @@
 }
 .song-search-papa{
      width: 80%;
+
      background: #fff;
      border-radius: 40px;
      border: 2px solid green;
 }
+@media screen and (min-width: 700px) {
+     .song-search-papa{
+          width: 400px;
+     }
+}
 .song-search-input{
      width: 90%;
-     height: 20px;
+     height: 15px;
      text-align: center;
 
      padding: 10px;
