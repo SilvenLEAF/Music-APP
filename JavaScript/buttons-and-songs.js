@@ -447,15 +447,6 @@ function toggleLike(){
 
 
 
-uta.addEventListener('ended', ()=>{
-     if(playingSongNum < songList.length - 1){
-          playingSongNum +=1;
-     } else{
-          playingSongNum = 0;
-     }
-
-     songChange();
-});
 
 /* **************************************************
 .            DYNAMIC Song El (Song Option) Creator
@@ -663,6 +654,66 @@ prev.addEventListener('click', ()=>{
      play.classList.remove('fa-play')
      play.classList.add('fa-pause')
 });
+
+//repeat
+let repeating = 'all';
+const repeatBtn = document.querySelector('#repeat');
+
+//repeatBtn
+repeatBtn.addEventListener( 'click', ()=>{
+
+     if (repeating === 'all'){
+
+          repeatBtn.textContent = 'one';
+          //turned into Repeat ONE
+          repeating = 'one';
+
+     } else if (repeating === 'one'){
+
+          repeatBtn.textContent = 'none';
+          //turned into Repeat NONE
+          repeating = 'none';
+
+     }else if (repeating === 'none'){
+
+          repeatBtn.textContent = 'all';
+          //Turned into Repeat ALL
+          repeating = 'all';
+
+     }
+
+
+})
+
+
+uta.addEventListener('ended', ()=>{
+
+     if (repeating === 'all'){
+
+          //Repeat ALL
+          if(playingSongNum < songList.length - 1){
+               playingSongNum +=1;
+          } else{
+               playingSongNum = 0;
+          }
+
+          //Song songChange
+          songChange();
+
+
+     } else if (repeating === 'one'){
+
+          //Repeat ONE
+          playingSongNum *= 1;
+
+          //Song songChange
+          songChange();
+
+
+     }
+
+});
+
 
 //Like
 like.addEventListener('click', toggleLike);
