@@ -305,6 +305,7 @@ let songList = [
 let uta = new Audio();
 let playingSongNum = -1;
 let playing =true;
+let repeating = 'all';
 
 
 
@@ -329,7 +330,10 @@ const angleDown= document.querySelector('.fa-angle-down');
 const play= document.querySelector('#play');
 const next= document.querySelector('#next');
 const prev= document.querySelector('#prev');
+
 const like= document.querySelector('#like');
+const repeatBtn = document.querySelector('#repeat');
+
 
 //Controls (Play Next Prev) + Settings
 const allBtns= document.querySelectorAll('.btn');
@@ -655,11 +659,10 @@ prev.addEventListener('click', ()=>{
      play.classList.add('fa-pause')
 });
 
-//repeat
-let repeating = 'all';
-const repeatBtn = document.querySelector('#repeat');
 
-//repeatBtn
+//.                                     REPEAT
+//------------------------------------------------------------------------------
+//repeatBtn changing the deciding variable of Repeat
 repeatBtn.addEventListener( 'click', ()=>{
 
      if (repeating === 'all'){
@@ -685,7 +688,7 @@ repeatBtn.addEventListener( 'click', ()=>{
 
 })
 
-
+//On Song END (Repeat or Not)
 uta.addEventListener('ended', ()=>{
 
      if (repeating === 'all'){
@@ -713,7 +716,7 @@ uta.addEventListener('ended', ()=>{
      }
 
 });
-
+//------------------------------------------------------------------------------
 
 //Like
 like.addEventListener('click', toggleLike);
