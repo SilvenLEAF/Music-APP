@@ -83,3 +83,15 @@
      flex-flow: row;
      text-align: center;
 }
+
+
+/* -----------------------------------------
+.                         THANKS
+------------------------------------------ */
+.thanks{
+     
+}
+
+.thanks .details{
+     font-size: 90%;
+}
