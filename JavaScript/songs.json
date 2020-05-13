@@ -1,0 +1,297 @@
+{
+     "jsongs": [
+          {
+               "name": "ネバギバ",
+               "image": "images/xwars.jpg",
+               "time": "4:18",
+               "song": "songs/digimon-xwars-nebagiba.mp3",
+
+               "searchName": "Digimon Xwars Digimon Fusion Never Give Up Nebagiba"
+          },
+          {
+               "name": "夢を叶えて",
+               "image": "images/doraemon-prehistoric.jpg",
+               "time": "4:04",
+               "song": "songs/doraemon-yume-wo-kanaete.mp3",
+
+               "searchName": "Doraemon Yume wo Kanaete"
+          },
+          {
+               "name": "ピースサイン",
+               "image": "images/bha.jpg",
+               "time": "4:02",
+               "song": "songs/bha-peace-sign.mp3",
+
+               "searchName": "Boku no hero academia my hero academia bha mha Peace Sign"
+          },
+          {
+               "name": "東京喰種",
+               "image": "images/tokyo-ghoul.png",
+               "time": "3:55",
+               "song": "songs/tokyo-ghoul-op.mp3",
+
+               "searchName": "Tokyo ghoul Unravel"
+          },
+          {
+               "name": "恋愛サルクェション",
+               "image": "images/renai-circulation.png",
+               "time": "4:14",
+               "song": "songs/renai-circulation.mp3",
+
+               "searchName": "Renai Circulation"
+          },
+          {
+               "name": "ステンダプ",
+               "image": "images/xwars-2.jpg",
+               "time": "4:28",
+               "song": "songs/digimon-xwars-stand-up.mp3",
+
+               "searchName": "Digimon Xwars Digimon Fusion Twill Stand Up"
+          },
+          {
+               "name": "死神の世界",
+               "image": "images/death-note.jpg",
+               "time": "3:39",
+               "song": "songs/death-note-op.mp3",
+
+               "searchName": "Death Note OP"
+          },
+          {
+               "name": "ガチンコベイ",
+               "image": "images/beyblade-burst-gt.jpg",
+               "time": "0:45",
+               "song": "songs/beyblade-burst-gt-op.mp3",
+
+               "searchName": "Beyblade Burst GT Gachi"
+          },
+          {
+               "name": "彗星の女子",
+               "image": "images/inazuma-emperor.jpg",
+               "time": "4:27",
+               "song": "songs/inazuma-orion-suisei-girls.mp3",
+
+               "searchName": "Inazuma Eleven Inazuma 11 Suisei Girls"
+          },
+          {
+               "name": "ヂギクロス",
+               "image": "images/xwars.jpg",
+               "time": "4:36",
+               "song": "songs/digimon-xwars-evolution-and-digix.mp3",
+
+               "searchName": "Digimon Xwars Digimon Fusion Evolution and DigiX"
+
+          },
+          {
+               "name": "僕等二人",
+               "image": "images/not-gto-manga.jpg",
+               "time": "3:47",
+               "song": "songs/gto-end.mp3",
+
+               "searchName": "Great TeacherOnizuka GTO End"
+          },
+          {
+               "name": "インファルノ",
+               "image": "images/fire-force.jpg",
+               "time": "3:33",
+               "song": "songs/fire-force-op.mp3",
+
+               "searchName": "Fire Force OP"
+          },
+          {
+               "name": "雪の女王",
+               "image": "images/frozen.jpg",
+               "time": "3:45",
+               "song": "songs/frozen-let-it-go.mp3",
+
+               "searchName": "Disney Frozen Let it go"
+          },
+          {
+               "name": "クロスハートー",
+               "image": "images/xwars.jpg",
+               "time": "4:18",
+               "song": "songs/digimon-xwars-xhearts.mp3",
+
+               "searchName": "Digimon Xwars Digimon Fusion Cross Hearts X Hearts"
+
+          },
+          {
+               "name": "世界最強",
+               "image": "images/one-punch-man.jpg",
+               "time": "3:47",
+               "song": "songs/one-punch-man-hero.mp3",
+
+               "searchName": "One Punch Man Openning The Hero"
+          },
+          {
+               "name": "サーマーゾムビ",
+               "image": "images/inazuma-emperor-art.jpg",
+               "time": "3:52",
+               "song": "songs/inazuma-orion-summer-zombie.mp3",
+
+               "searchName": "Inazuma Eleven Inazuma 11 Summer Zombie"
+          },
+          {
+               "name": "稲妻十一",
+               "image": "images/inazuma-game.jpg",
+               "time": "4:18",
+               "song": "songs/inazuma-op-sha-la-la.mp3",
+
+               "searchName": "Inazuma Eleven Inazuma 11 OP"
+          },
+          {
+               "name": "ビマイライート",
+               "image": "images/digimon-appli.jpg",
+               "time": "3:14",
+               "song": "songs/digimon-appli-be-my-light.mp3",
+
+               "searchName": "Digimon Appli Monsters Be My Light"
+          },
+          {
+               "name": "雪達磨を作ろうか",
+               "image": "images/little-anna-and-elsa.png",
+               "time": "3:13",
+               "song": "songs/frozen-do-you-wanna-build-a-snowman.mp3",
+
+               "searchName": "Disney Frozen Do you wanna build a snowman"
+          },
+          {
+               "name": "空の舞勇者",
+               "image": "images/xwars.jpg",
+               "time": "4:49",
+               "song": "songs/digimon-xwars-x5.mp3",
+
+               "searchName": "Digimon Xwars Digimon Fusion Maiyuusha X5"
+          },
+          {
+               "name": "バタフライ",
+               "image": "images/digimon-butterfly.jpg",
+               "time": "4:17",
+               "song": "songs/digimon-butterfly.mp3",
+
+               "searchName": "Digimon Butterfly"
+          },
+          {
+               "name": "恋は開けた門",
+               "image": "images/anna-and-kristoff.jpg",
+               "time": "2:02",
+               "song": "songs/frozen-love-is-an-open-door.mp3",
+
+               "searchName": "Disney Frozen Love is an Open Door"
+          },
+          {
+               "name": "ドクターストーン",
+               "image": "images/doctor-stone.jpg",
+               "time": "3:25",
+               "song": "songs/doctor-stone-op-2.mp3",
+
+               "searchName": "Doctor Stone OP2"
+          },
+          {
+               "name": "不易な毎日",
+               "image": "images/tangled.jpg",
+               "time": "2:23",
+               "song": "songs/tangled-when-will-my-life-begin.mp3",
+
+               "searchName": "Disney Tangled"
+          },
+          {
+               "name": "ポケットモンスター",
+               "image": "images/pokemon.jpg",
+               "time": "4:17",
+               "song": "songs/pokemon-getta-ban-ban.mp3",
+
+               "searchName": "Pokemon Getta Ban Ban"
+          },
+          {
+               "name": "保護者",
+               "image": "images/xwars-2.jpg",
+               "time": "4:25",
+               "song": "songs/digimon-xwars-x4b.mp3",
+
+               "searchName": "Digimon Xwars Digimon Fusion The Guardian X4B"
+          },
+          {
+               "name": "不死者の王",
+               "image": "images/overlord.jpg",
+               "time": "3:43",
+               "song": "songs/overlord-op-1.mp3",
+
+               "searchName": "Overlord The King of the Undead"
+          },
+          {
+               "name": "ヴェイル",
+               "image": "images/fire-force.jpg",
+               "time": "3:43",
+               "song": "songs/fire-force-end.mp3",
+
+               "searchName": "Fire Force End Veil Fire Force Ending "
+          },
+          {
+               "name": "生まれて初めて",
+               "image": "images/frozen-first.jpg",
+               "time": "3:45",
+               "song": "songs/frozen-for-the-first-time-in-forever.mp3",
+
+               "searchName": "Disney Frozen For the first time in Forever"
+          },
+          {
+               "name": "何処まで行けるか",
+               "image": "images/moana.jpg",
+               "time": "2:37",
+               "song": "songs/moana-how-far-Ill-go.mp3",
+
+               "searchName": "Disney Moana How Far I\"ll go"
+          },
+          {
+               "name": "増し増し",
+               "image": "images/haikyuu-2.webp",
+               "time": "4:08",
+               "song": "songs/haikyuu-s3-end.mp3",
+
+               "searchName": "Haikyuu S3 End Haikyuu Season 3 Ending"
+          },
+          {
+               "name": "ロスロスロス",
+               "image": "images/youjo-senki.jpg",
+               "time": "3:39",
+               "song": "songs/youjo-senki-los-los-los.mp3",
+
+               "searchName": "Youjo Senki Los Los Los"
+          },
+          {
+               "name": "問題もある",
+               "image": "images/trolls.png",
+               "time": "2:54",
+               "song": "songs/frozen-trolls.mp3",
+
+               "searchName": "Disney Frozen Fixer Upper Trolls"
+          },
+          {
+               "name": "高く飛べ",
+               "image": "images/haikyuu.jpeg",
+               "time": "4:02",
+               "song": "songs/haikyuu-fly-high.mp3",
+
+               "searchName": "Haikyuu Fly High"
+          },
+          {
+               "name": "進撃の巨人",
+               "image": "images/attack-on-titans.jpg",
+               "time": "5:18",
+               "song": "songs/attack-on-titans-op.mp3",
+
+               "searchName": "Attack on titans OP Shingeki no kyojin"
+          },
+          {
+               "name": "大人に成ったら",
+               "image": "images/olaf.jpg",
+               "time": "1:50",
+               "song": "songs/frozen-when-Im-older.mp3",
+
+               "searchName": "Disney Frozen Olaf When I\"m older"
+          }
+
+
+     ]
+
+}
