@@ -64,7 +64,7 @@
      user-select: none;
 }
 .song-list-section .copyRight, .settings .copyRight, .song-list-and-settings-h{
-     color: darkcyan;
+     color: #000;
      font-weight: bold;
      text-shadow: 4px 4px 4px #000;
 
