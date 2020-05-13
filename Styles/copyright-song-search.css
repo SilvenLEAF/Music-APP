@@ -1,11 +1,18 @@
 .copyright-holder, .song-search-granpa{
      width: 80vw;
-     height: 70px;
+     height: 60px;
 
      display: flex;
      flex-flow: column;
      justify-content: center;
      align-items: center;
+
+     background: var(--copyrightHolderBG);
+     border-top-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     border: 2px solid #fff;
+
+     margin: 5px;
 }
 
 

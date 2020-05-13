@@ -3,17 +3,20 @@
 :root{
      /* ------RESPONSIVE CENTERING----- */
      --pcCenteringWidth: 850px;
+
      /* ----------------------------
      .          CONTAINER
      ----------------------------- */
      --containerBG: darkcyan;
-     --song-list-sectionBG: darkcyan;
+     --song-list-sectionBG: deeppink;
      --wrapperBG:  url('images-in-styles/bg.png') center/cover;
-     --settingsBG: darkcyan;
+     --settingsBG: deeppink;
 
      /* ----------------------------
      .          SONGS LIST
      ----------------------------- */
+     --copyrightHolderBG: darkcyan;
+
      --song-el: #ddd;
      --song-name: #500;
      --song-el-shadow: rgba(0, 0, 0, 0.4);

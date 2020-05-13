@@ -16,8 +16,9 @@
 .settings-option{
      width: 80vw;
      margin: 25px auto;
-
-     border-radius: 20px;
+     border-top-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     border: 2px solid #fff;
 
      color: #fff;
      font-size: 130%;
@@ -89,9 +90,32 @@
 .                         THANKS
 ------------------------------------------ */
 .thanks{
-     font-size:140%;
+     font-size:120%;
 }
 
 .thanks .details{
      font-size: 90%;
+}
+.bestie-holder{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+@media screen and (max-width:700px) {
+     .bestie-holder{
+          flex-flow: column;
+     }
+}
+.my-bestie, .creator{
+     margin: 5px;
+}
+.creator-holder{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+@media screen and (max-width:500px) {
+     .creator-holder{
+          flex-flow: column;
+     }
 }
