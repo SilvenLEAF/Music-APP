@@ -6,10 +6,10 @@
      /* ----------------------------
      .          CONTAINER
      ----------------------------- */
-     --containerBG: deeppink;
-     --song-list-sectionBG: deeppink;
+     --containerBG: darkcyan;
+     --song-list-sectionBG: darkcyan;
      --wrapperBG:  url('images-in-styles/bg.png') center/cover;
-     --settingsBG: deeppink;
+     --settingsBG: darkcyan;
 
      /* ----------------------------
      .          SONGS LIST
