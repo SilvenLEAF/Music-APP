@@ -260,6 +260,10 @@ window.onload = ()=>{
                     songNameArr[i].textContent = songList[i].name;
                     songTimeArr[i].textContent = songList[i].time;
                     songIconArr[i].style.backgroundImage = `url(${songList[i].image})`;
+
+                    if(i%2){
+                         songEl[i].classList.add('odd-even');
+                    }
                }
 
 

@@ -13,7 +13,8 @@
      height: 70px;
      margin: 25px auto;
 
-     border-radius: 20px;
+     border-top-left-radius: 20px;
+     border-bottom-right-radius: 20px;
 
      background: var(--song-el);
      box-shadow: -6px 6px 6px var(--song-el-shadow);
@@ -24,6 +25,13 @@
      padding: 0px 25px;
 
      cursor: pointer;
+}
+.odd-even{
+     border-top-right-radius: 20px;
+     border-top-left-radius: 0px;
+
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 0px;
 }
 .name-plate{
      display: flex;
