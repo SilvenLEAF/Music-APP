@@ -35,8 +35,8 @@
      cursor: pointer;
 }
 .fa-close{
-     position: fixed;
-     top: 15px;
+     position: absolute;
+     top: 13px;
      right: 20px;
      z-index: 100;
 }

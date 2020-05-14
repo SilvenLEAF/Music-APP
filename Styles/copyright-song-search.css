@@ -1,12 +1,31 @@
 .header-of-sub-pages{
      height: 60px;
+     position: relative;
 
      background: var(--copyrightHolderBG);
      border-top-left-radius: 20px;
      border-bottom-right-radius: 20px;
      border: 2px solid #fff;
 
-     margin: 5px;
+     margin: 2.5vw;
+     margin-top: 5px;
+     margin-bottom: 5px;
+
+     overflow: hidden;
+}
+.header-of-sub-pages::before{
+     content: "";
+     display: block;
+
+     height: 180px;
+     width: 500px;
+     position: absolute;
+     right: 0;
+
+     background: hsla(360, 100%, 100%, 0.99);
+
+     clip-path: circle(50% at 100% 100%);
+     z-index: 1;
 }
 
 .copyright-holder, .song-search-granpa{
@@ -21,7 +40,8 @@
      justify-content: center;
      align-items: center;
 
-     background: inherit;
+     position: relative;
+     z-index: 10;
 }
 
 
@@ -40,7 +60,10 @@
 
      background: #fff;
      border-radius: 40px;
-     border: 2px solid green;
+     border: 2px solid deeppink;
+
+     position: relative;
+     z-index: 10;
 }
 @media screen and (min-width: 700px) {
      .song-search-papa{
