@@ -546,7 +546,7 @@ window.onload = ()=>{
                               }
 
                               //Song songChange
-                              // songChange();
+                              songChange();
 
 
                          } else if (repeating === 'one'){
@@ -555,11 +555,18 @@ window.onload = ()=>{
                               playingSongNum *= 1;
 
                               //Song songChange
-                              // songChange();
+                              songChange();
+                         }
+                         else{
+                              playing = false;
+
+                              play.classList.add('fa-play')
+                              play.classList.remove('fa-pause')
+
                          }
                     }
 
-                    songChange();
+                    // songChange();
 
                });
                //------------------------------------------------------------------------------
