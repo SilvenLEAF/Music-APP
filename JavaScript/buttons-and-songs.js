@@ -482,7 +482,7 @@ window.onload = ()=>{
 
                //Shuffle
                shuffleBtn.addEventListener('click', ()=>{
-                    if(repeating !== 'one'){
+
                          if(shuffleState){
                               shuffleState = false;
                               shuffleBtn.textContent = 'off';
@@ -490,9 +490,7 @@ window.onload = ()=>{
                               shuffleState = true;
                               shuffleBtn.textContent = 'on';
                          }
-                    }else{
-                         shuffleState = false;
-                    }
+               
                })
 
 
