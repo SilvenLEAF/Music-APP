@@ -1,11 +1,5 @@
-.copyright-holder, .song-search-granpa{
-     width: 80vw;
+.header-of-sub-pages{
      height: 60px;
-
-     display: flex;
-     flex-flow: column;
-     justify-content: center;
-     align-items: center;
 
      background: var(--copyrightHolderBG);
      border-top-left-radius: 20px;
@@ -13,6 +7,21 @@
      border: 2px solid #fff;
 
      margin: 5px;
+}
+
+.copyright-holder, .song-search-granpa{
+     width: 80vw;
+     height: 60px;
+
+     border-top-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+     align-items: center;
+
+     background: inherit;
 }
 
 
