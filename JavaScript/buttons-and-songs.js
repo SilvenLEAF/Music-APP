@@ -490,7 +490,7 @@ window.onload = ()=>{
                               shuffleState = true;
                               shuffleBtn.textContent = 'on';
                          }
-               
+
                })
 
 

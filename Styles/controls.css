@@ -60,6 +60,8 @@
      height: 50px;
      border-radius: 50%;
 
+     user-select: none;
+
      font-size: 160%;
      color: #fff;
      text-shadow: 1px 1px 0px #300,
