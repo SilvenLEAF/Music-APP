@@ -626,7 +626,7 @@ window.onload = ()=>{
                buttonBGbutton.addEventListener('click', ()=>{
                     let userButtonBG= document.querySelector('.buttonBG-input').value;
                          settingsPageClose();
-                         search.style.borderColor = userButtonBG;
+                         // search.style.borderColor = userButtonBG;
                          for(let i=0; i<allBtns.length; i++){
                               allBtns[i].style.background = userButtonBG;
                          };
@@ -670,7 +670,7 @@ window.onload = ()=>{
 
 
 
-               
+
 
 
 
