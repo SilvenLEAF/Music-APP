@@ -119,3 +119,21 @@
           flex-flow: column;
      }
 }
+#timer{
+     flex-flow:  column;
+     align-items: center;
+     justify-content: center;
+     height: 100px;
+
+}
+.timer-text{
+     font-style: italic;
+     color: red;
+
+     margin: 0;
+     padding: 0;
+
+}
+.timer-count-text{
+     font-size: 120%;
+}
