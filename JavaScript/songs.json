@@ -1,10 +1,18 @@
 {
      "jsongs": [
           {
+               "name": "君の嘘",
+               "image": "images/shigatsu-wa-kimi-no-uso.jpg",
+               "time": "4:09",
+               "song": "songs/shigatsu-wa-kimi-no-uso-op.mp3",
+
+               "searchName": "Shigatsu wa Kimi no Uso Your Lie in April"
+          },
+          {
                "name": "スパークル",
                "image": "images/kimi-no-nawa-end.png",
                "time": "6:49",
-               "song": "songs/Kimi no Nawa Sparkle Your Name.mp3",
+               "song": "songs/kimi-no-nawa-end.mp3",
 
                "searchName": "Kimi no Nawa Your Name"
           },
@@ -153,6 +161,14 @@
                "song": "songs/inazuma-orion-summer-zombie.mp3",
 
                "searchName": "Inazuma Eleven Inazuma 11 Summer Zombie"
+          },
+          {
+               "name": "二人なら",
+               "image": "images/shigatsu-wa-kimi-no-uso.jpg",
+               "time": "4:44",
+               "song": "songs/shigatsu-wa-kimi-no-uso-end.mp3",
+
+               "searchName": "Shigatsu wa Kimi no Uso Your Lie in April"
           },
           {
                "name": "SAO Adamas",
