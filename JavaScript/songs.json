@@ -1,6 +1,30 @@
 {
      "jsongs": [
           {
+               "name": "スパークル",
+               "image": "images/kimi-no-nawa-end.png",
+               "time": "6:49",
+               "song": "songs/Kimi no Nawa Sparkle Your Name.mp3",
+
+               "searchName": "Kimi no Nawa Your Name"
+          },
+          {
+               "name": "どろろ",
+               "image": "images/dororo.jpg",
+               "time": "3:36",
+               "song": "songs/dororo-op.mp3",
+
+               "searchName": "Dororo OP"
+          },
+          {
+               "name": "SAO 瞬間を掴め",
+               "image": "images/sao-catch-the-moment.jpg",
+               "time": "5:05",
+               "song": "songs/sao-catch-the-moment.mp3",
+
+               "searchName": "SAO Acilization Catch the moment"
+          },
+          {
                "name": "ネバギバ",
                "image": "images/xwars.jpg",
                "time": "4:18",
@@ -131,6 +155,22 @@
                "searchName": "Inazuma Eleven Inazuma 11 Summer Zombie"
           },
           {
+               "name": "SAO Adamas",
+               "image": "images/sao-adamas.jpg",
+               "time": "3:43",
+               "song": "songs/sao-adamas.mp3",
+
+               "searchName": "SAO Ordinal Scale Adamas"
+          },
+          {
+               "name": "何でもないや",
+               "image": "images/kimi-no-nawa.webp",
+               "time": "5:44",
+               "song": "songs/Kimi no Nawa Nandemonaiya Your Name.mp3",
+
+               "searchName": "Kimi no Nawa Your Name"
+          },
+          {
                "name": "稲妻十一",
                "image": "images/inazuma-game.jpg",
                "time": "4:18",
@@ -153,6 +193,14 @@
                "song": "songs/frozen-do-you-wanna-build-a-snowman.mp3",
 
                "searchName": "Disney Frozen Do you wanna build a snowman"
+          },
+          {
+               "name": "生きて行く",
+               "image": "images/doraemon-prehistoric.jpg",
+               "time": "4:06",
+               "song": "songs/doraemon-ikiteku.mp3",
+
+               "searchName": "Doraemon Ikiteku"
           },
           {
                "name": "空の舞勇者",
