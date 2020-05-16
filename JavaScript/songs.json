@@ -12,9 +12,9 @@
                "name": "スパークル",
                "image": "images/kimi-no-nawa-end.png",
                "time": "6:49",
-               "song": "songs/kimi-no-nawa-end.mp3",
+               "song": "songs/kimi-no-nawa-sparkle.mp3",
 
-               "searchName": "Kimi no Nawa Your Name"
+               "searchName": "Kimi no Nawa Sparkle Your Name"
           },
           {
                "name": "どろろ",
@@ -182,9 +182,9 @@
                "name": "何でもないや",
                "image": "images/kimi-no-nawa.webp",
                "time": "5:44",
-               "song": "songs/Kimi no Nawa Nandemonaiya Your Name.mp3",
+               "song": "songs/kimi-no-nawa-nandemonaiya.mp3",
 
-               "searchName": "Kimi no Nawa Your Name"
+               "searchName": "Kimi no Nawa Nandemonaiya Your Name"
           },
           {
                "name": "稲妻十一",
