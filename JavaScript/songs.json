@@ -353,7 +353,71 @@
                "song": "songs/frozen-when-Im-older.mp3",
 
                "searchName": "Disney Frozen Olaf When I am older"
-          }
+          },
+          {
+               "name": "明日へのバイバイ",
+               "image": "images/inazuma-orion.jpg",
+               "time": "4:07",
+               "song": "songs/inazuma-orion-ashiata-e-no-bai-bai.mp3",
+
+               "searchName": "Inazuma 11 Inazuma Eleven Ashita e no bai bai"
+          },
+          {
+               "name": "旗揚げ獣道",
+               "image": "images/kemono-michi.jpg",
+               "time": "4:38",
+               "song": "songs/kemono-michi-op.mp3",
+
+               "searchName": "Hataage Kemono Michi"
+          },
+          {
+               "name": "ブラクコロバ",
+               "image": "images/black-clover.jpg",
+               "time": "3:06",
+               "song": "songs/black-clover-op.mp3",
+
+               "searchName": "Black Clover"
+          },
+          {
+               "name": "暗殺教室",
+               "image": "images/ansatsu-kyoushitsu.jpg",
+               "time": "3:46",
+               "song": "songs/ansatsu-kyoushitsu-s1-op.mp3",
+
+               "searchName": "Ansatsu Kyoushitsu Assassination Classroom"
+          },
+          {
+               "name": "ボルト",
+               "image": "images/boruto.jpg",
+               "time": "4:23",
+               "song": "songs/boruto-op-7.mp3",
+
+               "searchName": "Boruto Naruto Next Generations"
+          },
+          {
+               "name": "ハンターＸハンター",
+               "image": "images/hunter-x-hunter.jpg",
+               "time": "4:11",
+               "song": "songs/hunter-x-hunter-op.mp3",
+
+               "searchName": "Hunter X Hunter"
+          },
+          {
+               "name": "盾の勇者",
+               "image": "images/tate-no-yuusha.jpg",
+               "time": "3:44",
+               "song": "songs/tate-no-yuusha-op.mp3",
+
+               "searchName": "Tate no Yuusha The rise of the Shield Hero"
+          },
+          {
+               "name": "オアンピスホウポ",
+               "image": "images/one-piece.jpg",
+               "time": "4:07",
+               "song": "songs/one-piece-hope.mp3",
+
+               "searchName": "ONE PIECE Hope"
+          },
 
 
      ]
