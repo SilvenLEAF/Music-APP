@@ -261,7 +261,7 @@
           {
                "name": "ポケットモンスター",
                "image": "images/pokemon.jpg",
-               "time": "4:17",
+               "time": "4:04",
                "song": "songs/pokemon-getta-ban-ban.mp3",
 
                "searchName": "Pokemon Getta Ban Ban"
@@ -297,6 +297,14 @@
                "song": "songs/frozen-for-the-first-time-in-forever.mp3",
 
                "searchName": "Disney Frozen For the first time in Forever"
+          },
+          {
+               "name": "稲妻舞台",
+               "image": "images/inazuma-orion.jpg",
+               "time": "4:20",
+               "song": "songs/inazuma-orion-butai.mp3",
+
+               "searchName": "Inazuma 11 Inazuma Eleven Butai"
           },
           {
                "name": "何処まで行けるか",
@@ -345,6 +353,14 @@
                "song": "songs/attack-on-titans-op.mp3",
 
                "searchName": "Attack on titans OP Shingeki no kyojin"
+          },
+          {
+               "name": "ポケモン目指せ",
+               "image": "images/pokemon.jpg",
+               "time": "4:17",
+               "song": "songs/pokemon-mezase.mp3",
+
+               "searchName": "Pokemon Mezase"
           },
           {
                "name": "大人に成ったら",
@@ -418,6 +434,14 @@
 
                "searchName": "ONE PIECE Hope"
           },
+          {
+               "name": "地球をキク",
+               "image": "images/inazuma-orion.jpg",
+               "time": "4:19",
+               "song": "songs/inazuma-orion-kick.mp3",
+
+               "searchName": "Inazuma 11 Chikyuu wo Kick"
+          }
 
 
      ]
