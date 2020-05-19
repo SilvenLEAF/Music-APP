@@ -33,6 +33,14 @@
                "searchName": "Dororo OP"
           },
           {
+               "name": "イマジネション",
+               "image": "images/haikyuu-imagination.jpg",
+               "time": "3:00",
+               "song": "songs/haikyuu-imagination.mp3",
+
+               "searchName": "Haikyuu Imagination OP"
+          },
+          {
                "name": "SAO 瞬間を掴め",
                "image": "images/sao-catch-the-moment.jpg",
                "time": "5:05",
@@ -403,6 +411,14 @@
                "searchName": "Inazuma 11 Inazuma Eleven Ashita e no bai bai"
           },
           {
+               "name": "フェニックス",
+               "image": "images/haikyuu-crows.jpg",
+               "time": "4:06",
+               "song": "songs/haikyuu-4-op.mp3",
+
+               "searchName": "Haikyuu To The Top Phoenix OP"
+          },
+          {
                "name": "旗揚げ獣道",
                "image": "images/kemono-michi.jpg",
                "time": "4:38",
@@ -507,12 +523,20 @@
                "searchName": "Boku Dake ga Inai Machi Erased"
           },
           {
-               "name": "早く帰って",
-               "image": "images/kimi-no-uso.webp",
-               "time": "3:56",
-               "song": "songs/One-man-punch-end.mp3",
+               "name": "ハイキュウ",
+               "image": "images/haikyuu-to-the-top.jpg",
+               "time": "4:45",
+               "song": "songs/haikyuu-4-end.mp3",
 
-               "searchName": "One Punch Man Ending"
+               "searchName": "Haikyuu To The Top Ending"
+          },
+          {
+               "name": "鋼の錬金術師",
+               "image": "images/fullmetal-alchemist.jpg",
+               "time": "4:12", 
+               "song": "songs/fullmetal-alchemist-again.mp3",
+
+               "searchName": "Fullmetal Alchemist Brotherhood"
           }
 
 
