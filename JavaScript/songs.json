@@ -203,6 +203,14 @@
                "searchName": "Beyblade Burst Turbo Beyblade Burst Chouzetsu OP"
           },
           {
+               "name": "クロクのバスケト",
+               "image": "images/kuroko-no-basket-op.jpg",
+               "time": "4:21",
+               "song": "songs/kuroko-no-basket-op.mp3",
+
+               "searchName": "Kuroko no Basket"
+          },
+          {
                "name": "SAO Adamas",
                "image": "images/sao-adamas.jpg",
                "time": "3:43",
@@ -403,14 +411,6 @@
                "searchName": "Disney Frozen Olaf When I am older"
           },
           {
-               "name": "明日へのバイバイ",
-               "image": "images/inazuma-orion.jpg",
-               "time": "4:07",
-               "song": "songs/inazuma-orion-ashiata-e-no-bai-bai.mp3",
-
-               "searchName": "Inazuma 11 Inazuma Eleven Ashita e no bai bai"
-          },
-          {
                "name": "フェニックス",
                "image": "images/haikyuu-crows.jpg",
                "time": "4:06",
@@ -499,14 +499,6 @@
                "searchName": "Kimetsu no Yaiba Demon Slayer OP"
           },
           {
-               "name": "零：ゼロ",
-               "image": "images/rezero.png",
-               "time": "4:18",
-               "song": "songs/rezero-op.mp3",
-
-               "searchName": "RE:Zero Starting life in another world"
-          },
-          {
                "name": "ベイブライドアスト",
                "image": "images/beyblade-burst-god.jpg",
                "time": "1:30",
@@ -547,12 +539,36 @@
                "searchName": "Kimi no Nawa Sparkle Your Name"
           },
           {
+               "name": "零：ゼロ",
+               "image": "images/rezero.png",
+               "time": "4:18",
+               "song": "songs/rezero-op.mp3",
+
+               "searchName": "RE:Zero Starting life in another world"
+          },
+          {
                "name": "ドリドリ",
                "image": "images/pokemon-doridori.jpg",
                "time": "3:59",
                "song": "songs/pokemon-doridori.mp3",
 
                "searchName": "Pokemon Doridori"
+          },
+          {
+               "name": "明日へのバイバイ",
+               "image": "images/inazuma-orion.jpg",
+               "time": "4:07",
+               "song": "songs/inazuma-orion-ashiata-e-no-bai-bai.mp3",
+
+               "searchName": "Inazuma 11 Inazuma Eleven Ashita e no bai bai"
+          },
+          {
+               "name": "ファンタスチック",
+               "image": "images/kuroko-no-basket-end.jpg",
+               "time": "4:03",
+               "song": "songs/kuroko-no-basket-end.mp3",
+
+               "searchName": "Kuroko no Basket END"
           }
 
 
