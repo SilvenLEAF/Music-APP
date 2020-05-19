@@ -1,6 +1,14 @@
 {
      "jsongs": [
           {
+               "name": "ベイブライポップ",
+               "image": "images/metal-fight-beyblade-main5.jpg",
+               "time": "1:30",
+               "song": "songs/beyblade-burst-beypop.mp3",
+
+               "searchName": "Beyblade Burst Turbo Beyblade Burst Chouzetsu Bey Pop END"
+          },
+          {
                "name": "君の嘘",
                "image": "images/shigatsu-wa-kimi-no-uso.jpg",
                "time": "4:09",
@@ -63,6 +71,14 @@
                "song": "songs/tokyo-ghoul-op.mp3",
 
                "searchName": "Tokyo ghoul Unravel"
+          },
+          {
+               "name": "ビリヴ",
+               "image": "images/metal-fight-beyblade-end.jpg",
+               "time": "4:00",
+               "song": "songs/beyblade-burst-believe.mp3",
+
+               "searchName": "Beyblade Burst Believe END"
           },
           {
                "name": "恋愛サルクェション",
@@ -148,7 +164,7 @@
           },
           {
                "name": "世界最強",
-               "image": "images/one-punch-man.jpg",
+               "image": "images/one-punch-man-2.jpg",
                "time": "3:47",
                "song": "songs/one-punch-man-hero.mp3",
 
@@ -169,6 +185,14 @@
                "song": "songs/shigatsu-wa-kimi-no-uso-end.mp3",
 
                "searchName": "Shigatsu wa Kimi no Uso Your Lie in April"
+          },
+          {
+               "name": "超ゼツ",
+               "image": "images/beyblade-chouzetsu.jpg",
+               "time": "1:31",
+               "song": "songs/beyblade-burst-chouzetsu-op.mp3",
+
+               "searchName": "Beyblade Burst Turbo Beyblade Burst Chouzetsu OP"
           },
           {
                "name": "SAO Adamas",
@@ -441,6 +465,54 @@
                "song": "songs/inazuma-orion-kick.mp3",
 
                "searchName": "Inazuma 11 Chikyuu wo Kick"
+          },
+          {
+               "name": "ステインスガイト",
+               "image": "images/steins-gate.jpg",
+               "time": "4:17",
+               "song": "songs/steins-gate-op.mp3",
+
+               "searchName": "Steins Gate OP"
+          },
+          {
+               "name": "鬼滅の刃",
+               "image": "images/kimetsu-no-yaiba.jpg",
+               "time": "3:56",
+               "song": "songs/kimetsu-no-yaiba-op.mp3",
+
+               "searchName": "Kimetsu no Yaiba Demon Slayer OP"
+          },
+          {
+               "name": "零：ゼロ",
+               "image": "images/rezero.png",
+               "time": "4:18",
+               "song": "songs/rezero-op.mp3",
+
+               "searchName": "RE:Zero Starting life in another world"
+          },
+          {
+               "name": "ベイブライドアスト",
+               "image": "images/beyblade-burst-god.jpg",
+               "time": "1:30",
+               "song": "songs/beyblade-burst-god-op.mp3",
+
+               "searchName": "Beyblade Burst God Beyblade Burst Evolution Burst OP"
+          },
+          {
+               "name": "僕だけがいない街",
+               "image": "images/boku-dake-ga-inai-machi.jpg",
+               "time": "3:11",
+               "song": "songs/boku-dake-ga-inai-machi-op.mp3",
+
+               "searchName": "Boku Dake ga Inai Machi Erased"
+          },
+          {
+               "name": "早く帰って",
+               "image": "images/kimi-no-uso.webp",
+               "time": "3:56",
+               "song": "songs/One-man-punch-end.mp3",
+
+               "searchName": "One Punch Man Ending"
           }
 
 
