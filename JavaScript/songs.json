@@ -17,12 +17,12 @@
                "searchName": "Shigatsu wa Kimi no Uso Your Lie in April"
           },
           {
-               "name": "スパークル",
-               "image": "images/kimi-no-nawa-end.png",
-               "time": "6:49",
-               "song": "songs/kimi-no-nawa-sparkle.mp3",
+               "name": "ロングホープ",
+               "image": "images/bha-longhope.jpg",
+               "time": "4:56",
+               "song": "songs/bha-long-hope.mp3",
 
-               "searchName": "Kimi no Nawa Sparkle Your Name"
+               "searchName": "Boku no HERO Academia My HERO Academia Long Hope Philia Bha Mha END"
           },
           {
                "name": "どろろ",
@@ -533,10 +533,26 @@
           {
                "name": "鋼の錬金術師",
                "image": "images/fullmetal-alchemist.jpg",
-               "time": "4:12", 
+               "time": "4:12",
                "song": "songs/fullmetal-alchemist-again.mp3",
 
                "searchName": "Fullmetal Alchemist Brotherhood"
+          },
+          {
+               "name": "スパークル",
+               "image": "images/kimi-no-nawa-end.png",
+               "time": "6:49",
+               "song": "songs/kimi-no-nawa-sparkle.mp3",
+
+               "searchName": "Kimi no Nawa Sparkle Your Name"
+          },
+          {
+               "name": "ドリドリ",
+               "image": "images/pokemon-doridori.jpg",
+               "time": "3:59",
+               "song": "songs/pokemon-doridori.mp3",
+
+               "searchName": "Pokemon Doridori"
           }
 
 
