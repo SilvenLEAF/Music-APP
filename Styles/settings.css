@@ -127,7 +127,7 @@
 
 }
 .timer-text{
-     font-style: italic;
+     
      font-family: "Open Sans";
      color: red;
 
@@ -137,4 +137,5 @@
 }
 .timer-count-text{
      font-size: 120%;
+     color: red;
 }
