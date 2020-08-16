@@ -1,7 +1,7 @@
 # MusicAPP
 *My VERY first Music App with PURE HTML5,  CSS and Vanilla JavaScript!!!* 
 
-A highly customiable Music APP with fluid and smooth butter-like page transition effects. It is an App for anime Songs!      
+A highly customisable Music APP with fluid and smooth butter-like page transition effects. It is an App for anime Songs!      
 
 
 ## **See Live:**
