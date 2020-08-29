@@ -17,4 +17,5 @@ A highly customisable Music APP with fluid and smooth butter-like page transitio
 
 
 
-<img src="/MusicAPP.png" />
+<img src="/MusicAPP Home.png" style="height: 400px" />
+<img src="/MusicAPP Songs.png" style="height: 400px" />
