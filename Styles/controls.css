@@ -30,7 +30,7 @@
      user-select: none;
 }
 .btn{
-     background: green;
+     background: var(--buttonBG);
      border: 3px solid #fff;
      text-shadow: 3px -3px 3px #300;
 }

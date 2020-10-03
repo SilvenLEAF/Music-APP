@@ -7,10 +7,11 @@
      /* ----------------------------
      .          CONTAINER
      ----------------------------- */
-     --containerBG: darkcyan;
+     --containerBG: teal;
      --song-list-sectionBG: deeppink;
      --wrapperBG:  url('images-in-styles/bg.png') center/cover;
      --settingsBG: deeppink;
+     --buttonBG: #f00;
 
      /* ----------------------------
      .          SONGS LIST
